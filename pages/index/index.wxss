@@ -1,0 +1,91 @@
+.all {
+  margin-left: 30rpx;
+}
+
+/*-------运动统计模块-------*/
+.running {
+  position: relative;
+  width: 690rpx;
+  height: 213rpx;
+}
+
+/*公里数显示*/
+.mile {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.mileage {
+  font-size: 48rpx;
+  color: rgba(87, 211, 230, 1);
+  font-weight: 600;
+}
+.good {
+  font-size: 22rpx;
+  color: rgba(219, 222, 227, 1);
+  letter-spacing: 5rpx;
+}
+/*奖牌*/
+.medal {
+  position: absolute;
+  top: 46rpx;
+  right: 0rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background-color: blue;
+}
+/*柱状图*/
+.histogram {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  right: 5rpx;
+  bottom: 0;
+  width: 311rpx;
+}
+.histogram view {
+  width: 29rpx;
+  background-color: rgb(229, 231, 233);
+}
+.hist1, .hist3, .hist4, .hist5, .hist6 {
+  height: 5rpx;
+  
+}
+.hist2 {
+  height: 43rpx;
+ 
+}
+.hist7 {
+    height: 87rpx;
+}
+.histogram .best {
+  background-color: rgb(87, 211, 230);
+}
+
+
+/*-------校友排名模块-------*/
+.rank {
+  position: relative;
+  width: 690rpx;
+  height: 192rpx;
+  margin-top: 71rpx;
+  background-color: grey;
+}
+.shcoolfriend {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.text1 {
+
+}
+
+/*-------我的进度模块-------*/
+.process {
+  width: 690rpx;
+  height: 385rpx;
+  margin-top: 49rpx;
+  background-color: grey;
+}
