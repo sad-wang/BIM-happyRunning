@@ -1,12 +1,45 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/dailyAttendance/dailyAttendance",
+    "pages/mooc/mooc",
+    "pages/personalCenter/personalCenter",
+    "pages/dailyAttendance/rank/rank",
+    "pages/dailyAttendance/title/title",
+    "pages/mooc/moocDetails/moocDetails",
+    "pages/mooc/moocLists/moocLists",
+    "pages/personalCenter/myScore/myScore",
+    "pages/personalCenter/myPoints/myPoints"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "日常运动",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/navBar/mooc1.png",
+        "iconPath": "images/navBar/mooc0.png",
+        "pagePath": "pages/mooc/mooc",
+        "text": "线上课堂"
+      },
+      {
+        "selectedIconPath": "images/navBar/flash1.png",
+        "iconPath": "images/navBar/flash0.png",
+        "pagePath": "pages/dailyAttendance/dailyAttendance",
+        "text": "日常打卡"
+      },
+      {
+        "selectedIconPath": "images/navBar/person1.png",
+        "iconPath": "images/navBar/person0.png",
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "个人中心"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
