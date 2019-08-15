@@ -1,3 +1,7 @@
+text {
+  display: block;
+  font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
 .all {
   margin-left: 30rpx;
 }
@@ -9,6 +13,22 @@
   height: 213rpx;
 }
 
+/*日常运动文本*/
+.daily {
+  position: absolute;
+  top: 28rpx;
+}
+.daily-sports, .good {
+  font-size: 22rpx;
+  color: rgba(219, 222, 227, 1);
+  letter-spacing: 5rpx;
+}
+.today-sports {
+  font-size: 28rpx;
+  font-weight: 600;
+  letter-spacing: 1rpx;
+}
+
 /*公里数显示*/
 .mile {
   position: absolute;
@@ -16,24 +36,20 @@
   bottom: 0;
 }
 .mileage {
-  font-size: 48rpx;
+  font-size: 43rpx;
   color: rgba(87, 211, 230, 1);
   font-weight: 600;
 }
-.good {
-  font-size: 22rpx;
-  color: rgba(219, 222, 227, 1);
-  letter-spacing: 5rpx;
-}
+
 /*奖牌*/
 .medal {
   position: absolute;
   top: 46rpx;
   right: 0rpx;
-  width: 60rpx;
-  height: 60rpx;
-  background-color: blue;
+  width: 68rpx;
+  height: 52rpx;
 }
+
 /*柱状图*/
 .histogram {
   display: flex;
@@ -71,21 +87,61 @@
   width: 690rpx;
   height: 192rpx;
   margin-top: 71rpx;
-  background-color: grey;
 }
+/*校友排名文本*/
 .shcoolfriend {
   position: absolute;
   top: 0;
   left: 0;
 }
-.text1 {
-
+.schoolfriend .text1, .schoolfriend .text2 {
+  font-size: 29rpx;
+  font-weight: 600;
+  letter-spacing: 3rpx;
+}
+.schoolfriend > .text2 {
+  color: rgba(199, 204, 210, 1);
+}
+.schoolfriend .text3 {
+  display: inline;
+  color: rgba(87, 211, 230, 1);
+}
+/*头像照片*/
+.picture {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 595rpx;
+  position: absolute;
+  left: 43rpx;
+  bottom: 0;
+}
+.picture image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 5rpx;
+}
+.picture .last {
+  width: 40rpx;
+  height: 10rpx;
 }
 
 /*-------我的进度模块-------*/
-.process {
+.schedule {
+  position: relative;
   width: 690rpx;
   height: 385rpx;
   margin-top: 49rpx;
-  background-color: grey;
 }
+.schedule-text {
+  font-size: 29rpx;
+  font-weight: 600;
+  letter-spacing: 3rpx;
+}
+.schedule image {
+  position: absolute;
+  top: 81rpx;
+  left: 143rpx;
+  width: 404rpx;
+  height: 306rpx;
+} 

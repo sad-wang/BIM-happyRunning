@@ -2,11 +2,15 @@
 <view class="all">
 <!--每周公里数统计模块-->
   <view class="running">
+    <view class="daily">
+      <text class="daily-sports">日常运动\n</text>
+      <text class="today-sports">今日运动 (公里)</text>
+    </view>
     <view class="mile">
       <text class="mileage">1.3公里\n</text>
       <text class="good">本周最佳</text>
     </view>
-    <view class="medal"></view>
+    <image class="medal" src="../../images/dailyAttendanceImage/medal.png" />
     <view class="histogram">
       <view class="hist1"></view>
       <view class="hist2"></view>
@@ -17,15 +21,23 @@
       <view class="best hist7"></view>
     </view>
   </view>
-
   <view class="rank">
   <!--校友排名-->
-    <view class="shcoolfriend">
+    <view class="schoolfriend">
       <text class="text1">校友排名\n</text>
       <text class="text2">第<text class="text3">3</text>名</text>
     </view>
+    <view class="picture">
+      <image src="../../images/dailyAttendanceImage/pct1.png" />
+      <image src="../../images/dailyAttendanceImage/pct2.png" />
+      <image src="../../images/dailyAttendanceImage/pct3.png" />
+      <image src="../../images/dailyAttendanceImage/pct4.png" />
+      <image src="../../images/dailyAttendanceImage/pct5.png" />
+      <image src="../../images/dailyAttendanceImage/pct6.png" class="last"/>
+    </view>
   </view>
-  <view class="process">
-  
+  <view class="schedule">
+    <view class="schedule-text">我的进度</view>
+    <image src="../../images/dailyAttendanceImage/schedule.png" />
   </view>
 </view>
