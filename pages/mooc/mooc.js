@@ -1,4 +1,4 @@
-// pages/mooc/mooc.js.js
+// pages/mooc/mooc.js
 Page({
 
   /**

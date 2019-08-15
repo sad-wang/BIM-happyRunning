@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/dailyAttendance/dailyAttendance",
-    "pages/mooc/mooc.js",
+    "pages/mooc/mooc",
     "pages/personalCenter/personalCenter",
     "pages/dailyAttendance/rank/rank",
     "pages/dailyAttendance/title/title",
@@ -22,21 +22,21 @@
     "borderStyle": "white",
     "list": [
       {
-        "selectedIconPath": "images/111.png",
-        "iconPath": "images/11.png",
+        "selectedIconPath": "images/navBar/mooc1.png",
+        "iconPath": "images/navBar/mooc0.png",
         "pagePath": "pages/mooc/mooc",
         "text": "线上课堂"
       },
       {
-        "selectedIconPath": "images/221.png",
-        "iconPath": "images/22.png",
-        "pagePath": "pages/logs/logs",
+        "selectedIconPath": "images/navBar/flash1.png",
+        "iconPath": "images/navBar/flash0.png",
+        "pagePath": "pages/dailyAttendance/dailyAttendance",
         "text": "日常打卡"
       },
       {
-        "selectedIconPath": "images/331.png",
-        "iconPath": "images/33.png",
-        "pagePath": "pages/test/test",
+        "selectedIconPath": "images/navBar/person1.png",
+        "iconPath": "images/navBar/person0.png",
+        "pagePath": "pages/personalCenter/personalCenter",
         "text": "个人中心"
       }
     ]
