@@ -1,2 +1,15 @@
 <!--pages/personalCenter/personalCenter.wxml-->
-<text>pages/personalCenter/personalCenter.wxml</text>
+<view class="container">
+    <view class="top">
+    </view>
+    <view class="sections">
+        <section></section>
+        <section></section>
+        <section class="my-mooc">
+            我的课堂
+        </section>
+    </view>
+
+
+
+</view>

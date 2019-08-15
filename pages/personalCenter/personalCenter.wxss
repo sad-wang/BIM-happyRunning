@@ -1,1 +1,37 @@
 /* pages/personalCenter/personalCenter.js.wxss */
+.container{
+    z-index: -2;
+    position: relative;
+    background-color: #e6f1f2;
+    height: 100vh;
+}
+
+.container .top{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200rpx;
+    width: 750rpx;
+    background: rgb(20,182,207);
+    background: -moz-linear-gradient(left,  rgb(20,182,207) 0%, rgb(20,205,207) 100%);
+    background: -webkit-linear-gradient(left,  rgb(20,182,207) 0%,rgb(20,205,207) 100%);
+    background: linear-gradient(to right,  rgb(20,182,207) 0%,rgb(20,205,207) 100%);
+}
+.container .sections{
+    margin-top: -20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 548rpx;
+}
+.container .sections section{
+
+    height: 196rpx;
+    width: 690rpx;
+    border-radius: 10rpx;
+    background-color: #ffffff;
+}
+.container .sections .my-mooc{
+    height: 97rpx;
+}

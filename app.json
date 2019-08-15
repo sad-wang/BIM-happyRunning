@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/personalCenter/personalCenter",
     "pages/dailyAttendance/dailyAttendance",
     "pages/mooc/mooc",
-    "pages/personalCenter/personalCenter",
     "pages/dailyAttendance/rank/rank",
     "pages/dailyAttendance/title/title",
     "pages/mooc/moocDetails/moocDetails",
