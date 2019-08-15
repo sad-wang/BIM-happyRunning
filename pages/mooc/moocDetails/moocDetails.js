@@ -1,4 +1,4 @@
-// pages/dailyAttendance/dailyAttendance.js.js
+// pages/mooc/moocDetails/moocDetails.js
 Page({
 
   /**

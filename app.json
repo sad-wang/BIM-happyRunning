@@ -1,6 +1,13 @@
 {
   "pages": [
-    "pages/dailyAttendance/dailyAttendance"
+    "pages/dailyAttendance/dailyAttendance",
+    "pages/mooc/mooc.js",
+    "pages/personalCenter/personalCenter",
+    "pages/dailyAttendance/rank",
+    "pages/dailyAttendance/rank/rank",
+    "pages/dailyAttendance/title/title",
+    "pages/mooc/moocDetails/moocDetails",
+    "pages/mooc/moocLists/moocLists"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,4 +1,4 @@
-// pages/dailyAttendance/dailyAttendance.js.js
+// pages/dailyAttendance/rank/rank.js
 Page({
 
   /**
