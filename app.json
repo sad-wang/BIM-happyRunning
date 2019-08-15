@@ -3,17 +3,43 @@
     "pages/dailyAttendance/dailyAttendance",
     "pages/mooc/mooc.js",
     "pages/personalCenter/personalCenter",
-    "pages/dailyAttendance/rank",
     "pages/dailyAttendance/rank/rank",
     "pages/dailyAttendance/title/title",
     "pages/mooc/moocDetails/moocDetails",
-    "pages/mooc/moocLists/moocLists"
+    "pages/mooc/moocLists/moocLists",
+    "pages/personalCenter/myScore/myScore",
+    "pages/personalCenter/myPoints/myPoints"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "日常运动",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/111.png",
+        "iconPath": "images/11.png",
+        "pagePath": "pages/mooc/mooc",
+        "text": "线上课堂"
+      },
+      {
+        "selectedIconPath": "images/221.png",
+        "iconPath": "images/22.png",
+        "pagePath": "pages/logs/logs",
+        "text": "日常打卡"
+      },
+      {
+        "selectedIconPath": "images/331.png",
+        "iconPath": "images/33.png",
+        "pagePath": "pages/test/test",
+        "text": "个人中心"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

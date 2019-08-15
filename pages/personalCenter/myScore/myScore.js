@@ -1,4 +1,4 @@
-// pages/dailyAttendance/rank.js
+// pages/personalCenter/myScore/myScore.js
 Page({
 
   /**
