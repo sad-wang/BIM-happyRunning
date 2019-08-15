@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "课程介绍",
+  "backgroundTextStyle": "dark",
+  "navigationBarTextStyle": "black"
 }

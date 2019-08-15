@@ -8,7 +8,9 @@
     "pages/mooc/moocDetails/moocDetails",
     "pages/mooc/moocLists/moocLists",
     "pages/personalCenter/myScore/myScore",
-    "pages/personalCenter/myPoints/myPoints"
+    "pages/personalCenter/myPoints/myPoints",
+    "pages/dailyAttendance/title/pointTricks/pointTricks",
+    "pages/personalCenter/myMooc/myMooc"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,7 +20,7 @@
   },
   "tabBar": {
     "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
+    "selectedColor": "#000",
     "borderStyle": "white",
     "list": [
       {
@@ -31,7 +33,7 @@
         "selectedIconPath": "images/navBar/flash1.png",
         "iconPath": "images/navBar/flash0.png",
         "pagePath": "pages/dailyAttendance/dailyAttendance",
-        "text": "日常打卡"
+        "text": "日常运动"
       },
       {
         "selectedIconPath": "images/navBar/person1.png",

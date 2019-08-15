@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "校友排名",
+  "backgroundTextStyle": "dark",
+  "navigationBarTextStyle": "black"
 }
