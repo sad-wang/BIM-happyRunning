@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/personalCenter/personalCenter",
     "pages/dailyAttendance/dailyAttendance",
+    "pages/personalCenter/personalCenter",
     "pages/mooc/mooc",
     "pages/dailyAttendance/rank/rank",
     "pages/dailyAttendance/title/title",
