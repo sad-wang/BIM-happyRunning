@@ -4,7 +4,7 @@
         <view class="top-inner">
             <image class="userinfo-avatar" src="../../images/Avatar.png" mode="cover"></image>
             <view class="info">
-                <view class="info-name">王太难</view>
+                <view class="info-name" catchtap="qq">王太难</view>
                 <view class="info-num">201607405</view>
             </view>
             <view class="identification">普通学生</view>
@@ -12,10 +12,10 @@
     </view>
     <view class="sections">
         <section class="myScore">
-            <view class="section-title">
+            <navigator url="./myScore/myScore" class="section-title" >
                 <text>我的成绩</text>
                 <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
-            </view>
+            </navigator>
             <view class="section-content">
                 <view class="total">
                     <text>总成绩</text>
@@ -28,10 +28,10 @@
             </view>
         </section>
         <section class="myPoints">
-            <view class="section-title">
+            <navigator url="./myPoints/myPoints" class="section-title">
                 <text>我的积分</text>
                 <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
-            </view>
+            </navigator>
             <view class="section-content">
                 <view class="total">
                         <text>总积分</text>
@@ -43,12 +43,11 @@
             </view>
         </section>
         <section class="my-mooc">
-            <image class="mooc-icon" src="../../images/moocIcon.png" mode="cover"></image>
-            <text>我的课堂</text>
-            <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
+            <navigator url="./myMooc/myMooc">
+                <image class="mooc-icon" src="../../images/moocIcon.png" mode="cover"></image>
+                <text>我的课堂</text>
+                <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
+            </navigator>
         </section>
     </view>
-
-
-
 </view>

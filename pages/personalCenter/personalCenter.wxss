@@ -1,28 +1,24 @@
 /* pages/personalCenter/personalCenter.js.wxss */
 
 .container{
-    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     height: 100vh;
-    position: relative;
     background-color: #fcfefe;
 }
-
 .container .top{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 200rpx;
     width: 750rpx;
     background: linear-gradient(to right,  rgb(20,182,207) 0%,rgb(20,205,207) 100%);
 }
 .container .top .top-inner{
     display: flex;
-    width: 690rpx;
     flex-direction: row;
-    align-items: center;
-    height: 100%;
     margin: 0 auto;
+    align-items: center;
+    width: 690rpx;
+    height: 100%;
 }
 .container .top .top-inner .userinfo-avatar {
     width: 128rpx;
@@ -65,6 +61,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 548rpx;
+    align-items: center;
 }
 .container .sections section{
     box-sizing: border-box;
@@ -112,16 +109,18 @@
 }
 .container .sections .my-mooc{
     height: 97rpx;
+}
+.container .sections .my-mooc navigator{
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 28rpx;
     letter-spacing: 1rpx;
 }
-.container .sections .my-mooc text{
+.container .sections .my-mooc navigator text{
     flex: 1;
 }
-.container .sections .my-mooc .mooc-icon{
+.container .sections .my-mooc navigator .mooc-icon{
     width: 40rpx;
     height: 40rpx;
     margin-right: 30rpx;

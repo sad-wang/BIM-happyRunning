@@ -1,4 +1,4 @@
-<!--pages/index/index.wxml-->
+<!--pages/dailyAttendance/dailyAttendance.wxml-->
 <view class="all">
 <!--每周公里数统计模块-->
   <view class="running">

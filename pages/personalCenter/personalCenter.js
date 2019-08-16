@@ -7,11 +7,21 @@ Page({
   data: {
 
   },
-
+  toMyScore: function(event) {
+    console.log(222)
+  },
+  qq:function(){
+    console.log(123)
+  },
+  toMyScore: function(event) {
+    console.log(111)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+
 
   },
 
