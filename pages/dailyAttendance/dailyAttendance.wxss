@@ -48,6 +48,7 @@ text {
   right: 0rpx;
   width: 68rpx;
   height: 52rpx;
+  padding: 10rpx;
 }
 
 /*柱状图*/
@@ -99,7 +100,7 @@ text {
   font-weight: 600;
   letter-spacing: 3rpx;
 }
-.schoolfriend > .text2 {
+.schoolfriend .text2 {
   color: rgba(199, 204, 210, 1);
 }
 .schoolfriend .text3 {
@@ -115,6 +116,7 @@ text {
   position: absolute;
   left: 43rpx;
   bottom: 0;
+  padding: 15rpx;
 }
 .picture image {
   width: 80rpx;
