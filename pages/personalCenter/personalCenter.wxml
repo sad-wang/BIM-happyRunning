@@ -1,12 +1,51 @@
 <!--pages/personalCenter/personalCenter.wxml-->
 <view class="container">
     <view class="top">
+        <view class="top-inner">
+            <image class="userinfo-avatar" src="../../images/Avatar.png" mode="cover"></image>
+            <view class="info">
+                <view class="info-name">王太难</view>
+                <view class="info-num">201607405</view>
+            </view>
+            <view class="identification">普通学生</view>
+        </view>
     </view>
     <view class="sections">
-        <section></section>
-        <section></section>
+        <section class="myScore">
+            <view class="section-title">
+                <text>我的成绩</text>
+                <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
+            </view>
+            <view class="section-content">
+                <view class="total">
+                    <text>总成绩</text>
+                    <text class="number">2.9分</text>
+                </view>
+                <view class="today">
+                    <text>今日得分</text>
+                    <text class="number">20.3分</text>
+                </view>
+            </view>
+        </section>
+        <section class="myPoints">
+            <view class="section-title">
+                <text>我的积分</text>
+                <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
+            </view>
+            <view class="section-content">
+                <view class="total">
+                        <text>总积分</text>
+                        <text class="number">11分</text>
+                </view>
+                <view class="today">
+                    <text>今日积分</text>
+                    <text class="number">+3分</text></view>
+            </view>
+        </section>
         <section class="my-mooc">
-            我的课堂
+            <image class="mooc-icon" src="../../images/moocIcon.png" mode="cover"></image>
+            <text>我的课堂</text>
+            <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
         </section>
     </view>
 
