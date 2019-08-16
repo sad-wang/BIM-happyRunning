@@ -43,5 +43,6 @@
   <view class="schedule">
     <view class="schedule-text">我的进度</view>
     <image src="../../images/dailyAttendanceImage/schedule.png" />
+    <text></text>
   </view>
 </view>
