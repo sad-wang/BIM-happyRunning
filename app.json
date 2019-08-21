@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/mooc/moocLists/moocLists",
     "pages/dailyAttendance/dailyAttendance",
     "pages/personalCenter/personalCenter",
     "pages/mooc/mooc",
@@ -8,7 +9,7 @@
     "pages/dailyAttendance/rank/rank",
     "pages/dailyAttendance/title/title",
     "pages/mooc/moocDetails/moocDetails",
-    "pages/mooc/moocLists/moocLists",
+
 
     "pages/personalCenter/myPoints/myPoints",
     "pages/dailyAttendance/title/pointTricks/pointTricks"

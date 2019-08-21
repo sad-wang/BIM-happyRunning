@@ -7,14 +7,10 @@ Page({
   data: {
 
   },
-  toMyScore: function(event) {
-    console.log(222)
-  },
-  qq:function(){
-    console.log(123)
-  },
-  toMyScore: function(event) {
-    console.log(111)
+  navTo:function(e) {
+    wx.navigateTo({
+      url: e.currentTarget.dataset.url,
+    })
   },
   /**
    * 生命周期函数--监听页面加载
