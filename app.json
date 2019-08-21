@@ -1,18 +1,17 @@
 {
   "pages": [
-    "pages/personalCenter/myScore/myScore",
-    "pages/personalCenter/personalCenter",
     "pages/dailyAttendance/dailyAttendance",
-
+    "pages/personalCenter/personalCenter",
     "pages/mooc/mooc",
+    "pages/personalCenter/myScore/myScore",
+    "pages/personalCenter/myMooc/myMooc",
     "pages/dailyAttendance/rank/rank",
     "pages/dailyAttendance/title/title",
     "pages/mooc/moocDetails/moocDetails",
     "pages/mooc/moocLists/moocLists",
 
     "pages/personalCenter/myPoints/myPoints",
-    "pages/dailyAttendance/title/pointTricks/pointTricks",
-    "pages/personalCenter/myMooc/myMooc"
+    "pages/dailyAttendance/title/pointTricks/pointTricks"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,2 +1,161 @@
 <!--pages/personalCenter/myPoints/myPoints.wxml-->
-<text>pages/personalCenter/myPoints/myPoints.wxml</text>
+<!--pages/personalCenter/myScore/myScore.wxml-->
+<view class="container">
+    <view class="statistics">
+        <view class="title">7月积分实时统计</view>
+        <view class="score">总积分 11</view>
+        <view class="chart">
+            <view class="chart-ring"></view>
+            <view class="chart-data"></view>
+        </view>
+    </view>
+    <view class="detail">
+        <view class="detail-tab">
+            <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">今日成绩</view>
+            <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">本月成绩</view>
+            <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">本学期成绩</view>
+        </view>
+        <swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+            <swiper-item class="detail-day">
+                <scroll-view scroll-y  >
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-run.png"></image>
+                        <view class="content">
+                            <view class="content-title">今日运动打卡</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+1</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-match.png"></image>
+                        <view class="content">
+                            <view class="content-title">校级运动会二等奖</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-match.png"></image>
+                        <view class="content">
+                            <view class="content-title">绘画比赛</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-run.png"></image>
+                        <view class="content">
+                            <view class="content-title">今日运动打卡</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-run.png"></image>
+                        <view class="content">
+                            <view class="content-title">今日运动打卡</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+1</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-match.png"></image>
+                        <view class="content">
+                            <view class="content-title">校级运动会二等奖</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-match.png"></image>
+                        <view class="content">
+                            <view class="content-title">绘画比赛</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-run.png"></image>
+                        <view class="content">
+                            <view class="content-title">今日运动打卡</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                </scroll-view>
+            </swiper-item>
+            <swiper-item class="detail-month">
+                <scroll-view scroll-y  >
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-run.png"></image>
+                        <view class="content">
+                            <view class="content-title">今日运动打卡</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+1</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-match.png"></image>
+                        <view class="content">
+                            <view class="content-title">校级运动会二等奖</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-match.png"></image>
+                        <view class="content">
+                            <view class="content-title">绘画比赛</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-run.png"></image>
+                        <view class="content">
+                            <view class="content-title">今日运动打卡</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                </scroll-view>
+            </swiper-item>
+            <swiper-item class="deatil-year">
+                <scroll-view scroll-y  >
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-run.png"></image>
+                        <view class="content">
+                            <view class="content-title">今日运动打卡</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+1</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-match.png"></image>
+                        <view class="content">
+                            <view class="content-title">校级运动会二等奖</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-match.png"></image>
+                        <view class="content">
+                            <view class="content-title">绘画比赛</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                    <view   class="scroll-view-item">
+                        <image src="../../../images/icon-run.png"></image>
+                        <view class="content">
+                            <view class="content-title">今日运动打卡</view>
+                            <view class="content-time">2019.07.13</view>
+                        </view>
+                        <view class="number">+3</view>
+                    </view>
+                </scroll-view>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

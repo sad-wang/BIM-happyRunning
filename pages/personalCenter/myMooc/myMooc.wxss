@@ -1,1 +1,59 @@
 /* pages/personalCenter/myMooc/myMooc.wxss */
+scroll-view{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+scroll-view .scroll-view-item {
+    border-bottom: #e7eaeb solid 1rpx;
+    height: 119rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 29rpx;
+}
+scroll-view .scroll-view-item image{
+    width: 119rpx;
+    height: 119rpx;
+    border-radius: 7rpx;
+}
+scroll-view .scroll-view-item .content{
+    width: 119rpx;
+    height: 119rpx;
+    border-radius: 7rpx;
+    flex: 1;
+    padding: 0 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+scroll-view .scroll-view-item .content .content-title{
+    font-weight: bold;
+    font-size: 30rpx;
+}
+scroll-view .scroll-view-item .content .content-text{
+    font-size: 25rpx;
+    color: #c7ccd2;
+}
+scroll-view .scroll-view-item .number{
+    font-size: 24rpx;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 119rpx;
+    align-items: flex-end;
+}
+scroll-view .scroll-view-item .number .all-number{
+    color: #f8a348;
+    width: 100rpx;
+    height: 42 rpx;
+    line-height: 42rpx;
+    border-radius: 17rpx;
+    background-color: #f0f2f3;
+    text-align: center;
+
+}
+scroll-view .scroll-view-item .number .finished-number{
+
+}

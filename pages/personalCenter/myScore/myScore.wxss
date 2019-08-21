@@ -8,6 +8,7 @@ div{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    letter-spacing: 1rpx;
 }
 .container .statistics{
     flex: 1;
@@ -48,7 +49,7 @@ div{
     font-weight: bolder;
 }
 .container .detail .detail-tab .swiper-tab-item{
-
+    letter-spacing: 2rpx;
 }
 .container .detail .detail-tab .active{
     color: black;
@@ -66,10 +67,37 @@ div{
     justify-content: center;
     margin: 0 auto;
 }
-.scroll-view-item{
+.container .detail swiper swiper-item scroll-view .scroll-view-item{
     width: 100%;
-    height: 80px;
-    background-color: yellow;
-    margin: 4rpx;
+    height: 138rpx;
+    background-color: #fff;
+    border-bottom: #e7eaeb 1rpx solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+}
+.container .detail swiper swiper-item scroll-view .scroll-view-item image{
+    width: 69rpx;
+    height: 69rpx;
+    margin-left: 42rpx;
+    margin-right: 30rpx;
+}
+.container .detail swiper swiper-item scroll-view .scroll-view-item .content{
+    flex: 1;
+}
+.container .detail swiper swiper-item scroll-view .scroll-view-item .content .content-title{
+    font-size: 28rpx;
+    font-weight: bolder;
+    color: #000;
+    margin-bottom: 6rpx;
+}
+.container .detail swiper swiper-item scroll-view .scroll-view-item .content .content-time {
+    font-size: 24rpx;
+    color: #c7ccd2;
+}
+.container .detail swiper swiper-item scroll-view .scroll-view-item .number{
+    margin-right: 59rpx;
+    font-size: 30rpx;
 }

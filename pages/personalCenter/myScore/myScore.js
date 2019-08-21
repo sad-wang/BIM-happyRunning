@@ -16,7 +16,12 @@ Page({
 
   },
   //滑动切换
-
+  swiperTab: function (e) {
+    var that = this;
+    that.setData({
+      currentTab: e.detail.current
+    });
+  },
   //点击切换
   clickTab: function (e) {
     console.log(1)
