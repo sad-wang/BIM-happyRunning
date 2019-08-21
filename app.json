@@ -1,14 +1,15 @@
 {
   "pages": [
+    "pages/personalCenter/myScore/myScore",
     "pages/personalCenter/personalCenter",
     "pages/dailyAttendance/dailyAttendance",
- 
+
     "pages/mooc/mooc",
     "pages/dailyAttendance/rank/rank",
     "pages/dailyAttendance/title/title",
     "pages/mooc/moocDetails/moocDetails",
     "pages/mooc/moocLists/moocLists",
-    "pages/personalCenter/myScore/myScore",
+
     "pages/personalCenter/myPoints/myPoints",
     "pages/dailyAttendance/title/pointTricks/pointTricks",
     "pages/personalCenter/myMooc/myMooc"
