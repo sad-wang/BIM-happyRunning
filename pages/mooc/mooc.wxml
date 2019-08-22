@@ -1,2 +1,191 @@
 <!--pages/mooc/mooc.wxml-->
-
+<scroll-view scroll-y enable-flex>
+    <view class="search">
+        <view class="box">
+            <image class="icon" src="../../images/search.png"></image>
+            <input type="text" value="搜索..."/>
+        </view>
+    </view>
+    <scroll-view scroll-x enable-flex class="category">
+        <class class="category-inner">
+            <view class="category-item">
+                <image src="../../images/football.png" class="item-icon"></image>
+                <view class="item-name">足球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/basketball.png" class="item-icon"></image>
+                <view class="item-name">篮球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/tennis.png" class="item-icon"></image>
+                <view class="item-name">网球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/badminton.png" class="item-icon"></image>
+                <view class="item-name">羽毛球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/volleyball.png" class="item-icon"></image>
+                <view class="item-name">排球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/basketball.png" class="item-icon"></image>
+                <view class="item-name">篮球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/tennis.png" class="item-icon"></image>
+                <view class="item-name">网球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/badminton.png" class="item-icon"></image>
+                <view class="item-name">羽毛球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/football.png" class="item-icon"></image>
+                <view class="item-name">足球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/basketball.png" class="item-icon"></image>
+                <view class="item-name">篮球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/tennis.png" class="item-icon"></image>
+                <view class="item-name">网球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/badminton.png" class="item-icon"></image>
+                <view class="item-name">羽毛球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/volleyball.png" class="item-icon"></image>
+                <view class="item-name">排球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/football.png" class="item-icon"></image>
+                <view class="item-name">足球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/basketball.png" class="item-icon"></image>
+                <view class="item-name">篮球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/tennis.png" class="item-icon"></image>
+                <view class="item-name">网球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/badminton.png" class="item-icon"></image>
+                <view class="item-name">羽毛球</view>
+            </view>
+            <view class="category-item">
+                <image src="../../images/volleyball.png" class="item-icon"></image>
+                <view class="item-name">排球</view>
+            </view>
+        </class>
+    </scroll-view>
+    <view class="recommend ">
+        <view class="title" bindtap="navTo"  data-url="./moocLists/moocLists">
+            <view class="main-title">推荐好课</view>
+            <view class="all">查看全部</view>
+            <image class="next-triangle" src="../../images/next-triangle.png"></image>
+        </view>
+        <view class="content">
+            <view class="content-item">
+                <image src="../../images/mooc1-1.png" class="item-image"></image>
+                <view class="item-title">14节静心冥想</view>
+                <view class="item-subtitle">完美训练方案</view>
+            </view>
+            <view class="content-item">
+                <image src="../../images/mooc1-2.png" class="item-image"></image>
+                <view class="item-title">14节静心冥想</view>
+                <view class="item-subtitle">完美训练方案</view>
+            </view>
+        </view>
+    </view>
+    <view class="mooc-lists">
+        <view class="title"  bindtap="navTo"  data-url="./moocLists/moocLists">
+            <view class="main-title">足球系列</view>
+            <view class="all">查看全部</view>
+            <image class="next-triangle" src="../../images/next-triangle.png"></image>
+        </view>
+        <view   class="scroll-view-item">
+            <image src="../../images/mooc/mooc1.png"></image>
+            <view class="content">
+                <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
+                <view class="content-text">你本来就很美</view>
+            </view>
+            <view class="number">
+                <view class="all-number">10课时</view>
+            </view>
+        </view>
+        <view   class="scroll-view-item">
+            <image src="../../images/mooc/mooc2.png"></image>
+            <view class="content">
+                <view class="content-title">篮球技巧7日特训</view>
+                <view class="content-text">你也可以制霸全场</view>
+            </view>
+            <view class="number">
+                <view class="all-number">4课时</view>
+            </view>
+        </view>
+        <view   class="scroll-view-item">
+            <image src="../../images/mooc/mooc1.png"></image>
+            <view class="content">
+                <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
+                <view class="content-text">你本来就很美</view>
+            </view>
+            <view class="number">
+                <view class="all-number">10课时</view>
+            </view>
+        </view>
+        <view   class="scroll-view-item">
+            <image src="../../images/mooc/mooc2.png"></image>
+            <view class="content">
+                <view class="content-title">篮球技巧7日特训</view>
+                <view class="content-text">你也可以制霸全场</view>
+            </view>
+            <view class="number">
+                <view class="all-number">4课时</view>
+            </view>
+        </view>
+        <view   class="scroll-view-item">
+            <image src="../../images/mooc/mooc1.png"></image>
+            <view class="content">
+                <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
+                <view class="content-text">你本来就很美</view>
+            </view>
+            <view class="number">
+                <view class="all-number">10课时</view>
+            </view>
+        </view>
+        <view   class="scroll-view-item">
+            <image src="../../images/mooc/mooc2.png"></image>
+            <view class="content">
+                <view class="content-title">篮球技巧7日特训</view>
+                <view class="content-text">你也可以制霸全场</view>
+            </view>
+            <view class="number">
+                <view class="all-number">4课时</view>
+            </view>
+        </view>
+        <view   class="scroll-view-item">
+            <image src="../../images/mooc/mooc1.png"></image>
+            <view class="content">
+                <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
+                <view class="content-text">你本来就很美</view>
+            </view>
+            <view class="number">
+                <view class="all-number">10课时</view>
+            </view>
+        </view>
+        <view   class="scroll-view-item">
+            <image src="../../images/mooc/mooc2.png"></image>
+            <view class="content">
+                <view class="content-title">篮球技巧7日特训</view>
+                <view class="content-text">你也可以制霸全场</view>
+            </view>
+            <view class="number">
+                <view class="all-number">4课时</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

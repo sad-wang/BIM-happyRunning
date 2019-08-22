@@ -3,13 +3,13 @@
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+
     height: 100vh;
     background-color: #fcfefe;
 }
 .container .top{
     height: 200rpx;
-    width: 750rpx;
+    width: 100%;
     background: linear-gradient(to right,  rgb(20,182,207) 0%,rgb(20,205,207) 100%);
 }
 .container .top .top-inner{

@@ -24,7 +24,6 @@ Page({
   },
   //点击切换
   clickTab: function (e) {
-    console.log(1)
     var that = this;
     if (this.data.currentTab === e.target.dataset.current) {
       return false;

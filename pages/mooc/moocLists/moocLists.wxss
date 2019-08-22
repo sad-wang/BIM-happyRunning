@@ -1,6 +1,5 @@
 /* pages/mooc/moocLists/moocLists.wxss */
 scroll-view{
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -40,7 +39,7 @@ scroll-view .scroll-view-item .number{
     font-weight: normal;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 119rpx;
     align-items: flex-end;
 }

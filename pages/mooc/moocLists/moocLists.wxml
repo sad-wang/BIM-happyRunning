@@ -1,5 +1,5 @@
 <!--pages/mooc/moocLists/moocLists.wxml-->
-<scroll-view scroll-y  >
+<scroll-view scroll-y  enable-flex>
     <view   class="scroll-view-item">
         <image src="../../../images/mooc/mooc1.png"></image>
         <view class="content">
@@ -8,7 +8,6 @@
         </view>
         <view class="number">
             <view class="all-number">10课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -19,7 +18,6 @@
         </view>
         <view class="number">
             <view class="all-number">4课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -30,7 +28,6 @@
         </view>
         <view class="number">
             <view class="all-number">20课时</view>
-            <view class="finished-number">已观看10课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -41,7 +38,6 @@
         </view>
         <view class="number">
             <view class="all-number">10课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -52,7 +48,6 @@
         </view>
         <view class="number">
             <view class="all-number">4课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -63,7 +58,6 @@
         </view>
         <view class="number">
             <view class="all-number">20课时</view>
-            <view class="finished-number">已观看10课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -74,7 +68,6 @@
         </view>
         <view class="number">
             <view class="all-number">10课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -85,7 +78,6 @@
         </view>
         <view class="number">
             <view class="all-number">4课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -96,7 +88,6 @@
         </view>
         <view class="number">
             <view class="all-number">20课时</view>
-            <view class="finished-number">已观看10课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -107,7 +98,6 @@
         </view>
         <view class="number">
             <view class="all-number">10课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -118,7 +108,6 @@
         </view>
         <view class="number">
             <view class="all-number">10课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view   class="scroll-view-item">
@@ -129,7 +118,6 @@
         </view>
         <view class="number">
             <view class="all-number">10课时</view>
-            <view class="finished-number">已观看3课时</view>
         </view>
     </view>
     <view class="bottom">
