@@ -1,6 +1,6 @@
 <!--pages/personalCenter/myMooc/myMooc.wxml-->
 <scroll-view scroll-y  enable-flex>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails" >
         <image src="../../../images/mooc/mooc1.png"></image>
         <view class="content">
             <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
@@ -11,7 +11,7 @@
             <view class="finished-number">已观看3课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc2.png"></image>
         <view class="content">
             <view class="content-title">篮球技巧7日特训</view>
@@ -22,7 +22,7 @@
             <view class="finished-number">已观看3课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc3.png"></image>
         <view class="content">
             <view class="content-title">有氧健身训练</view>
@@ -33,7 +33,7 @@
             <view class="finished-number">已观看10课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc1.png"></image>
         <view class="content">
             <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
@@ -44,7 +44,7 @@
             <view class="finished-number">已观看3课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc2.png"></image>
         <view class="content">
             <view class="content-title">篮球技巧7日特训</view>
@@ -55,7 +55,7 @@
             <view class="finished-number">已观看3课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc3.png"></image>
         <view class="content">
             <view class="content-title">有氧健身训练</view>
@@ -66,7 +66,7 @@
             <view class="finished-number">已观看10课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc1.png"></image>
         <view class="content">
             <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
@@ -77,7 +77,7 @@
             <view class="finished-number">已观看3课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc2.png"></image>
         <view class="content">
             <view class="content-title">篮球技巧7日特训</view>
@@ -88,7 +88,7 @@
             <view class="finished-number">已观看3课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc3.png"></image>
         <view class="content">
             <view class="content-title">有氧健身训练</view>
@@ -99,7 +99,7 @@
             <view class="finished-number">已观看10课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc1.png"></image>
         <view class="content">
             <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
@@ -110,7 +110,7 @@
             <view class="finished-number">已观看3课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc1.png"></image>
         <view class="content">
             <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
@@ -121,7 +121,7 @@
             <view class="finished-number">已观看3课时</view>
         </view>
     </view>
-    <view   class="scroll-view-item">
+    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../../mooc/moocDetails/moocDetails">
         <image src="../../../images/mooc/mooc1.png"></image>
         <view class="content">
             <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>

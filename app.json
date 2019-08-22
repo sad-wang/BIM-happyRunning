@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/dailyAttendance/dailyAttendance",
     "pages/mooc/moocDetails/moocDetails",
     "pages/mooc/mooc",
-    "pages/dailyAttendance/dailyAttendance",
+
     "pages/personalCenter/personalCenter",
     "pages/personalCenter/myScore/myScore",
     "pages/personalCenter/myMooc/myMooc",
