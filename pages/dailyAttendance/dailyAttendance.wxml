@@ -1,18 +1,51 @@
 <!--pages/dailyAttendance/dailyAttendance.wxml-->
 <view class="all">
+  <!--日常打卡模块-->
+  <view class="punch">
+    <view class="title">
+      <view class="daily-punch">日常打卡</view>
+      <navigator url="./title/title">
+        <image class="medal" src="../../images/dailyAttendanceImage/medal.png" />
+    </navigator>
+    </view>
+    <view class="date-form">
+      <view class="date">
+        <view class="week">一</view>
+        <view class="day">13</view>
+      </view>
+      <view class="date">
+        <view class="week">二</view>
+        <view class="day is-today">14</view>
+      </view>
+      <view class="date">
+        <view class="week">三</view>
+        <view class="day">15</view>
+      </view>
+      <view class="date">
+        <view class="week">四</view>
+        <view class="day">16</view>
+      </view>
+      <view class="date">
+        <view class="week">五</view>
+        <view class="day">17</view>
+      </view>
+      <view class="date">
+        <view class="week">六</view>
+        <view class="day">18</view>
+      </view>
+      <view class="date">
+        <view class="week">七</view>
+        <view class="day">19</view>
+      </view>
+    </view>
+  </view>
 <!--每周公里数统计模块-->
   <view class="running">
-    <view class="daily">
-      <text class="daily-sports">日常运动\n</text>
-      <text class="today-sports">今日运动 (公里)</text>
-    </view>
+    <view class="today-sports">今日运动里程</view>
     <view class="mile">
       <text class="mileage">1.3公里\n</text>
       <text class="good">本周最佳</text>
     </view>
-    <navigator url="./title/title">
-      <image class="medal" src="../../images/dailyAttendanceImage/medal.png" />
-    </navigator>
     <view class="histogram">
       <view class="hist1"></view>
       <view class="hist2"></view>
