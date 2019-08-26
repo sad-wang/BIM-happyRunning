@@ -7,7 +7,7 @@
       <navigator url="./title/title">
         <image class="medal" src="../../images/dailyAttendanceImage/medal.png" />
     </navigator>
-    </view>
+    </view> 
     <view class="date-form">
       <view class="date">
         <view class="week">一</view>
@@ -15,11 +15,11 @@
       </view>
       <view class="date">
         <view class="week">二</view>
-        <view class="day is-today">14</view>
+        <view class="day">14</view>
       </view>
       <view class="date">
         <view class="week">三</view>
-        <view class="day">15</view>
+        <view class="day is-today">15</view>
       </view>
       <view class="date">
         <view class="week">四</view>
