@@ -41,19 +41,24 @@ text {
 .date {
   width: 32rpx;
   height: 67rpx;
+  text-align: center;
 }
 .date .week, .date .day {
   font-size: 24rpx;
+  text-align: center;
 }
 .date .week {
   color: rgba(190, 195, 203, 1);
 }
 .date .day {
+  line-height: 32rpx;
   margin-top: 19rpx;
   font-weight: 350rpx;
 }
 .is-today {
   color: white;
+  width: 32rpx;
+  height: 32rpx;
   background-color: rgba(87, 211, 230, 1);
   border-radius: 50%;
 }

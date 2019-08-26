@@ -1,2 +1,35 @@
 <!--pages/dailyAttendance/title/title.wxml-->
-<text>pages/dailyAttendance/title/title.wxml</text>
+<view class="my-level">
+    <image class="mylevel-icon" src="../../../images/title/5.png" />
+    <view class="mylevel-box">
+        <view class="level-content">金牌运动员</view>
+        <view class="level-integral">积累200积分</view>
+    </view>
+    <view class="level-strategy">
+        <image class="strategy-icon" src="" />
+        积分攻略
+    </view>
+</view>
+<view class="level-list">
+    <view class="column">
+        <view class="row">
+            <view class="level-box">
+                <image class="level-icon" src="../../../images/title/7.png" />
+                <text class="level-name">运动达人</text>
+                <text class="level-require">350积分以上</text>
+            </view>
+            <view class="level-box">
+                <image class="level-icon" src="../../../images/title/6.png" />
+                <text class="level-name">运动先锋</text>
+                <text class="level-require">350积分</text>
+            </view>
+            <view class="level-box">
+                <image class="level-icon" src="../../../images/title/5.png" />
+                <text class="level-name">金牌运动员</text>
+                <text class="level-require">200积分</text>
+            </view>
+        </view>
+        <view class="row"></view>
+        <view class="row"></view>
+    </view>
+</view>

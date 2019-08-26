@@ -1,1 +1,4 @@
 /* pages/dailyAttendance/title/title.wxss */
+.my-level {
+    background-image: url("../../../images/title/bg.png");
+}
