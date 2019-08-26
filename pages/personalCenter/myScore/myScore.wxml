@@ -4,8 +4,16 @@
         <view class="title">7月成绩实时统计</view>
         <view class="score">总成绩 11</view>
         <view class="chart">
-            <view class="chart-ring"></view>
-            <view class="chart-data"></view>
+            <view class="pie">
+                <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+            </view>
+            <view class="chart-data">
+                <view  class="data-item" wx:for="{{optionData.series[0].data}}" wx:if="{{index>0}}">
+                    <view class="block" style="background-color:{{optionData.color[index]}};"></view>
+                    <view class="data-name">{{item.name}}</view>
+                    <view class="data-value">{{item.value}}</view>
+                </view>
+            </view>
         </view>
     </view>
     <view class="detail">

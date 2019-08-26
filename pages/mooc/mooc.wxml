@@ -6,7 +6,7 @@
             <input type="text" value="搜索..."/>
         </view>
     </view>
-    <scroll-view scroll-x enable-flex class="category">
+    <scroll-view scroll-x enable-flex class="category" >
         <class class="category-inner">
             <view class="category-item">
                 <image src="../../images/football.png" class="item-icon"></image>
@@ -85,8 +85,7 @@
     <view class="recommend ">
         <view class="title" bindtap="navTo"  data-url="./moocLists/moocLists">
             <view class="main-title">推荐好课</view>
-            <view class="all">查看全部</view>
-            <image class="next-triangle" src="../../images/next-triangle.png"  ></image>
+            
         </view>
         <view class="content">
             <view class="content-item" bindtap="navTo"  data-url="./moocDetails/moocDetails">
