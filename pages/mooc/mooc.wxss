@@ -48,6 +48,7 @@ scroll-view .category .category-inner .category-item{
     flex-direction: column;
     align-items: center;
     margin: 0 37rpx;
+    justify-content: space-around;
 }
 scroll-view .category .category-inner .category-item .item-icon{
     width: 52rpx;

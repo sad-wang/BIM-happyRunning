@@ -15,7 +15,7 @@
 .mooc-container .mooc-lists .list-item .item-inner {
     padding: 30rpx 0;
     height: 119rpx;
-    width: calc(100vw + 120rpx);
+    width: calc(100vw + 200rpx);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,13 +70,14 @@
 }
 .mooc-container .mooc-lists .list-item .delete-btn{
 
-    width: 120rpx;
+    width: 200rpx;
     font-family: PingFangSC-Regular;
-    font-size: 24rpx;
+    font-size: 36rpx;
+    letter-spacing: 2rpx;
     color: #FFFFFF;
     line-height: 180rpx;
     height: 180rpx;
-    background: #E66671;
+    background: #ff2241;
     text-align: center;
 }
 
