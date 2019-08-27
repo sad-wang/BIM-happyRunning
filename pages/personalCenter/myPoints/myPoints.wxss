@@ -32,16 +32,14 @@ ec-canvas {
     width: 100%;
     height: 200rpx;
     position: relative;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .container .statistics .chart .pie {
-    height: 200rpx;
+    height: 240rpx;
     width: 250rpx;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,9 +49,6 @@ ec-canvas {
 .container .statistics .chart .chart-data {
     height: 200rpx;
     width: 392rpx;
-    position: absolute;
-    top: 0;
-    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
