@@ -7,7 +7,7 @@ let optionData ={
   series: [
     {
       type:'pie',
-      radius: ['84%', '100%'],
+      radius: ['64%', '80%'],
       label: {
         normal: {
           show: false,
