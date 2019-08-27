@@ -1,40 +1,55 @@
 /* pages/personalCenter/myMooc/myMooc.wxss */
-scroll-view{
+.mooc-container{
     display: flex;
     flex-direction: column;
 }
-scroll-view .scroll-view-item {
-    border-bottom: #e7eaeb solid 1rpx;
+.mooc-container .mooc-lists .list-item{
+    height: 180rpx;
+    width: calc(100vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mooc-container .mooc-lists .list-item .item-inner {
+    padding: 30rpx 0;
     height: 119rpx;
+    width: calc(100vw + 120rpx);
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 29rpx;
+
+    justify-content: space-between;
+    padding-left: 30rpx;
+    border-bottom: #e7eaeb solid 1rpx;
+
 }
-scroll-view .scroll-view-item image{
+.mooc-container .mooc-lists .list-item .item-inner .item-image{
     width: 119rpx;
     height: 119rpx;
     border-radius: 7rpx;
 }
-scroll-view .scroll-view-item .content{
-    width: 119rpx;
+.mooc-container .mooc-lists .list-item .item-inner .item-content{
+
+    width: 300rpx;
     height: 119rpx;
     border-radius: 7rpx;
-    flex: 1;
-    padding: 0 30rpx;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-scroll-view .scroll-view-item .content .content-title{
+.mooc-container .mooc-lists .list-item .item-inner .item-content .content-title{
     font-weight: bold;
     font-size: 30rpx;
+    line-height: 32rpx;
 }
-scroll-view .scroll-view-item .content .content-text{
+.mooc-container .mooc-lists .list-item .item-inner .item-content .content-text{
     font-size: 25rpx;
     color: #c7ccd2;
 }
-scroll-view .scroll-view-item .number{
+.mooc-container .mooc-lists .list-item .item-inner .item-period{
     font-size: 24rpx;
     font-weight: normal;
     display: flex;
@@ -42,8 +57,9 @@ scroll-view .scroll-view-item .number{
     justify-content: space-between;
     height: 119rpx;
     align-items: flex-end;
+    margin-right: 30rpx;
 }
-scroll-view .scroll-view-item .number .all-number{
+.mooc-container .mooc-lists .list-item .item-inner .item-period .total-period{
     color: #f8a348;
     width: 100rpx;
     height: 42 rpx;
@@ -51,8 +67,16 @@ scroll-view .scroll-view-item .number .all-number{
     border-radius: 17rpx;
     background-color: #f0f2f3;
     text-align: center;
-
 }
-scroll-view .scroll-view-item .number .finished-number{
+.mooc-container .mooc-lists .list-item .delete-btn{
 
+    width: 120rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #FFFFFF;
+    line-height: 180rpx;
+    height: 180rpx;
+    background: #E66671;
+    text-align: center;
 }
+
