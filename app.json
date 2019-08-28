@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/dailyAttendance/title/title",
+    "pages/dailyAttendance/title/pointTricks/pointTricks",
     "pages/dailyAttendance/dailyAttendance",
+    "pages/dailyAttendance/title/title",
     "pages/mooc/moocDetails/moocDetails",
     "pages/mooc/mooc",
     "pages/personalCenter/personalCenter",
@@ -9,8 +10,7 @@
     "pages/personalCenter/myMooc/myMooc",
     "pages/dailyAttendance/rank/rank",
     "pages/mooc/moocLists/moocLists",
-    "pages/personalCenter/myPoints/myPoints",
-    "pages/dailyAttendance/title/pointTricks/pointTricks"
+    "pages/personalCenter/myPoints/myPoints"
   ],
   "window": {
     "backgroundTextStyle": "light",
