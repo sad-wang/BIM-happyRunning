@@ -5,7 +5,8 @@ Page({
   data: {
     moocLists: [
       {
-        img:'../../mooc/moocDetails/moocDetails',
+        url:'../../mooc/moocDetails/moocDetails',
+        img:'../../../images/mooc/mooc1.png',
         id: 1,
         title: '夏日瘦身特训 瘦出你的最佳身体',
         subTitle:'你本来就很美',
@@ -13,7 +14,8 @@ Page({
         finishedPeriod: 10,
       },
       {
-        img:'../../mooc/moocDetails/moocDetails',
+        url:'../../mooc/moocDetails/moocDetails',
+        img:'../../../images/mooc/mooc2.png',
         id: 2,
         title: '篮球技巧七日特训',
         subTitle: '你也可以制霸全场',
@@ -21,13 +23,14 @@ Page({
         finishedPeriod: 3,
       },
       {
-        img:'../../mooc/moocDetails/moocDetails',
+        url:'../../mooc/moocDetails/moocDetails',
+        img:'../../../images/mooc/mooc3.png',
         id: 3,
         title: '有氧健身训练',
         subTitle: '让自己健步如飞',
         totalPeriod: 10,
         finishedPeriod: 3,
-      }
+      },
     ],
   },
 

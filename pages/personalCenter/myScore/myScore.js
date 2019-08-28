@@ -17,7 +17,7 @@ let optionData ={
       data:[
         {value:0, name:'',},
         {value:20, name:'固定加分'},
-        {value:70, name:'日常打卡',},
+        {value:70, name:'日常运动',},
         {value:70, name:'活动/比赛的参加'},
       ],
     }

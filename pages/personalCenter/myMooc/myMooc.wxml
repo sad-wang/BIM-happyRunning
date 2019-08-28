@@ -8,12 +8,12 @@
                                   bindtouchstart="handleTouchStart"
                                   bindtouchend="handleTouchEnd"
                                   bindchange="handleMovableChange">
-                        <image class="item-image" src="../../../images/mooc/mooc1.png" bindtap="navTo"  data-url="{{item.img}}"></image>
-                        <view class="item-content" bindtap="navTo"  data-url="{{item.img}}">
+                        <image class="item-image" src="{{item.img}}" bindtap="navTo"  data-url="{{item.url}}"></image>
+                        <view class="item-content" bindtap="navTo"  data-url="{{item.url}}">
                             <view class="content-title">{{item.title}}</view>
                             <view class="content-text">{{item.subTitle}}</view>
                         </view>
-                        <view class="item-period" bindtap="navTo"  data-url="{{item.img}}">
+                        <view class="item-period" bindtap="navTo"  data-url="{{item.url}}">
                             <view class="total-period">{{item.totalPeriod}}课时</view>
                             <view class="finished-period">已完成{{item.finishedPeriod}}课时</view>
                         </view>

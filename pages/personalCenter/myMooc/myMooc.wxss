@@ -69,7 +69,6 @@
     text-align: center;
 }
 .mooc-container .mooc-lists .list-item .delete-btn{
-
     width: 200rpx;
     font-family: PingFangSC-Regular;
     font-size: 36rpx;
