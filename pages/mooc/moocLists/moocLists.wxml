@@ -1,126 +1,17 @@
 <!--pages/mooc/moocLists/moocLists.wxml-->
-<scroll-view scroll-y  enable-flex>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc1.png"></image>
-        <view class="content">
-            <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
-            <view class="content-text">你本来就很美</view>
+<scroll-view class="mooc-container" scroll-y  enable-flex>
+    <view   class="mooc-lists"  >
+        <view class="list-item"   wx:for-index="index" wx:key="{{item.id}}" wx:for="{{moocLists}}">
+            <view class="item-inner">
+                <image class="item-image" src="{{item.img}}" bindtap="navTo"  data-url="{{item.url}}"></image>
+                <view class="item-content" bindtap="navTo"  data-url="{{item.url}}">
+                    <view class="content-title">{{item.title}}</view>
+                    <view class="content-text">{{item.subTitle}}</view>
+                </view>
+                <view class="item-period" bindtap="navTo"  data-url="{{item.url}}">
+                    <view class="total-period">{{item.totalPeriod}}课时</view>
+                </view>
+            </view>
         </view>
-        <view class="number">
-            <view class="all-number">10课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc2.png"></image>
-        <view class="content">
-            <view class="content-title">篮球技巧7日特训</view>
-            <view class="content-text">你也可以制霸全场</view>
-        </view>
-        <view class="number">
-            <view class="all-number">4课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc3.png"></image>
-        <view class="content">
-            <view class="content-title">有氧健身训练</view>
-            <view class="content-text">让自己健步如飞</view>
-        </view>
-        <view class="number">
-            <view class="all-number">20课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc1.png"></image>
-        <view class="content">
-            <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
-            <view class="content-text">你本来就很美</view>
-        </view>
-        <view class="number">
-            <view class="all-number">10课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item" bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc2.png"></image>
-        <view class="content">
-            <view class="content-title">篮球技巧7日特训</view>
-            <view class="content-text">你也可以制霸全场</view>
-        </view>
-        <view class="number">
-            <view class="all-number">4课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc3.png"></image>
-        <view class="content">
-            <view class="content-title">有氧健身训练</view>
-            <view class="content-text">让自己健步如飞</view>
-        </view>
-        <view class="number">
-            <view class="all-number">20课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc1.png"></image>
-        <view class="content">
-            <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
-            <view class="content-text">你本来就很美</view>
-        </view>
-        <view class="number">
-            <view class="all-number">10课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc2.png"></image>
-        <view class="content">
-            <view class="content-title">篮球技巧7日特训</view>
-            <view class="content-text">你也可以制霸全场</view>
-        </view>
-        <view class="number">
-            <view class="all-number">4课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc3.png"></image>
-        <view class="content">
-            <view class="content-title">有氧健身训练</view>
-            <view class="content-text">让自己健步如飞</view>
-        </view>
-        <view class="number">
-            <view class="all-number">20课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc1.png"></image>
-        <view class="content">
-            <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
-            <view class="content-text">你本来就很美</view>
-        </view>
-        <view class="number">
-            <view class="all-number">10课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc1.png"></image>
-        <view class="content">
-            <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
-            <view class="content-text">你本来就很美</view>
-        </view>
-        <view class="number">
-            <view class="all-number">10课时</view>
-        </view>
-    </view>
-    <view   class="scroll-view-item"  bindtap="navTo"  data-url="../moocDetails/moocDetails">
-        <image src="../../../images/mooc/mooc1.png"></image>
-        <view class="content">
-            <view class="content-title">夏日瘦身特训 瘦出你的最佳身体</view>
-            <view class="content-text">你本来就很美</view>
-        </view>
-        <view class="number">
-            <view class="all-number">10课时</view>
-        </view>
-    </view>
-    <view class="bottom">
-        已经到底啦，去看看其他课程~
     </view>
 </scroll-view>

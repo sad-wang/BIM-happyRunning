@@ -81,3 +81,28 @@
     margin: 29rpx;
     line-height: 48rpx;
 }
+.container .detail  .detail-inner .content .item{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1rpx #e7eaeb solid;
+    height: 95rpx;
+    align-items: center;
+}
+.container .detail  .detail-inner .content .item .id{
+    align-self: flex-start;
+    margin: 26rpx 32rpx 13rpx 0;
+    color: #cccccc;
+    font-size: 30rpx;
+}
+.container .detail  .detail-inner .content .item .item-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+}
+.container .detail  .detail-inner .content .item .item-info .title{
+    font-weight: bold;
+}
+.container .detail  .detail-inner .content .item .item-info .time{
+    color: #cccccc;
+}
