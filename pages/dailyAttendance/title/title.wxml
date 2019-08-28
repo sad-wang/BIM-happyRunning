@@ -1,5 +1,6 @@
 <!--pages/dailyAttendance/title/title.wxml-->
 <view class="my-level">
+    <view class="rectangle"></view>
     <view class="mylevel-flex">
         <image class="mylevel-icon" src="../../../images/title/5.png" />
         <view class="mylevel-box">
@@ -15,45 +16,39 @@
     </view>
 </view>
 <view class="level-list">
-    <view class="row">
-            <view class="level-box">
-                <image class="level-icon" src="../../../images/title/7.png" />
-                <text class="level-name">运动达人</text>
-                <text class="level-require">350积分以上</text>
-            </view>
-            <view class="level-box">
-                <image class="level-icon" src="../../../images/title/6.png" />
-                <text class="level-name">运动先锋</text>
-                <text class="level-require">350积分</text>
-            </view>
-            <view class="level-box">
-                <image class="level-icon" src="../../../images/title/5.png" />
-                <text class="level-name">金牌运动员</text>
-                <text class="level-require">200积分</text>
-            </view>
+    <view class="level-box">
+        <image class="level-icon" src="../../../images/title/7.png" />
+        <text class="level-name">运动达人</text>
+        <text class="level-require">350积分以上</text>
     </view>
-    <view class="row">
-            <view class="level-box">
-                <image class="level-icon" src="../../../images/title/4.png" />
-                <text class="level-name">银牌运动员</text>
-                <text class="level-require">100积分</text>
-            </view>
-            <view class="level-box">
-                <image class="level-icon" src="../../../images/title/3.png" />
-                <text class="level-name">铜牌运动员</text>
-                <text class="level-require">50积分以上</text>
-            </view>
-            <view class="level-box">
-                <image class="level-icon" src="../../../images/title/2.png" />
-                <text class="level-name">铁牌运动员</text>
-                <text class="level-require">10积分以上</text>
-            </view>
+    <view class="level-box">
+        <image class="level-icon" src="../../../images/title/6.png" />
+        <text class="level-name">运动先锋</text>
+        <text class="level-require">350积分</text>
     </view>
-    <view class="row">
-            <view class="level-box">
-                <image class="level-icon" src="../../../images/title/1.png" />
-                <text class="level-name">普通用户</text>
-                <text class="level-require">0-9积分以上</text>
-            </view>
+    <view class="level-box">
+        <image class="level-icon" src="../../../images/title/5.png" />
+        <text class="level-name">金牌运动员</text>
+        <text class="level-require">200积分</text>
+    </view>
+    <view class="level-box">
+        <image class="level-icon" src="../../../images/title/4.png" />
+        <text class="level-name">银牌运动员</text>
+        <text class="level-require">100积分</text>
+    </view>
+    <view class="level-box">
+        <image class="level-icon" src="../../../images/title/3.png" />
+        <text class="level-name">铜牌运动员</text>
+        <text class="level-require">50积分以上</text>
+    </view>
+    <view class="level-box">
+        <image class="level-icon" src="../../../images/title/2.png" />
+        <text class="level-name">铁牌运动员</text>
+        <text class="level-require">10积分以上</text>
+    </view>
+    <view class="level-box">
+        <image class="level-icon" src="../../../images/title/1.png" />
+        <text class="level-name">普通用户</text>
+        <text class="level-require">0-9积分以上</text>
     </view>
 </view>
