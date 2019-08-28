@@ -23,7 +23,6 @@ text {
 /*日常打卡文本*/
 .daily-punch {
   font-size: 29rpx;
-  font-weight: 400rpx;
 }
 /*奖牌*/
 .medal {
@@ -53,7 +52,6 @@ text {
 .date .day {
   line-height: 32rpx;
   margin-top: 19rpx;
-  font-weight: 350rpx;
 }
 .is-today {
   color: white;
@@ -82,7 +80,6 @@ text {
 }
 .today-sports {
   font-size: 29rpx;
-  font-weight: 550;
   color: black;
   letter-spacing: 1rpx;
 }
@@ -145,7 +142,6 @@ text {
 }
 .schoolfriend .text1, .schoolfriend .text2 {
   font-size: 29rpx;
-  font-weight: 400;
   letter-spacing: 3rpx;
 }
 .schoolfriend .text2 {
@@ -184,7 +180,6 @@ text {
 }
 .schedule-text {
   font-size: 29rpx;
-  font-weight: 400;
   letter-spacing: 3rpx;
 }
 .schedule image {
