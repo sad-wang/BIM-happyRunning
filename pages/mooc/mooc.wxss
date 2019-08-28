@@ -32,23 +32,23 @@ scroll-view .search .box input{
 }
 scroll-view .category{
     height: 12vh;
-    display: flex;
-
+    width: 690rpx;
 }
 scroll-view .category .category-inner{
     height: 12vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 35rpx;
 }
 scroll-view .category .category-inner .category-item{
     height: 98rpx;
     width: 150rpx;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-
+    margin: 0 37rpx;
+    justify-content: space-around;
 }
 scroll-view .category .category-inner .category-item .item-icon{
     width: 52rpx;
@@ -61,12 +61,12 @@ scroll-view .category .category-inner .category-item .item-name {
     text-align: center;
 }
 scroll-view .recommend{
-    height: 35vh;
+    height: 386rpx;
     display: flex;
     flex-direction: column;
     width: 690rpx;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 scroll-view view .title{
     display: flex;
@@ -110,6 +110,7 @@ scroll-view .mooc-lists{
     flex-direction: column;
     width: 690rpx;
     margin: 0 auto;
+    margin-top: 20rpx;
 }
 
 scroll-view .scroll-view-item {

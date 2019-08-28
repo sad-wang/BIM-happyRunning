@@ -7,7 +7,7 @@
                 蜕变</view>
             <view class="video-info">
                 <view class="teacher">主讲人：文双</view>
-                <view class="number">15节课·24小时</view>
+                <view class="number">15节课:·24小时</view>
             </view>
         </view>
     </view>
@@ -24,73 +24,73 @@
                 </view>
             </scroll-view>
             <scroll-view scroll-y  enable-flex class="content" wx:if="{{1==currentTab}}">
-                <view class="item">
+                <view class="item" >
                     <view class="id">1</view>
                     <view class="item-info">
-                        <view class="title">【第一节课】 认识ppt所有工具</view>
+                        <view class="title">第一节课: 认识ppt所有工具</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">2</view>
                     <view class="item-info">
-                        <view class="title">【第二节课】 动效的简单应用</view>
+                        <view class="title">第二节课: 动效的简单应用</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">3</view>
                     <view class="item-info">
-                        <view class="title">【第三节课】 我太难了</view>
+                        <view class="title">第三节课: 我太难了</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">4</view>
                     <view class="item-info">
-                        <view class="title">【第四节课】 导入导出素材，建立蒙版</view>
+                        <view class="title">第四节课: 导入导出素材，建立蒙版</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">5</view>
                     <view class="item-info">
-                        <view class="title">【第五节课】 动效的简单应用</view>
+                        <view class="title">第五节课: 动效的简单应用</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">1</view>
                     <view class="item-info">
-                        <view class="title">【第一节课】 认识ppt所有工具</view>
+                        <view class="title">第一节课: 认识ppt所有工具</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">2</view>
                     <view class="item-info">
-                        <view class="title">【第二节课】 动效的简单应用</view>
+                        <view class="title">第二节课: 动效的简单应用</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">3</view>
                     <view class="item-info">
-                        <view class="title">【第三节课】 我太难了</view>
+                        <view class="title">第三节课: 我太难了</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">4</view>
                     <view class="item-info">
-                        <view class="title">【第四节课】 导入导出素材，建立蒙版</view>
+                        <view class="title">第四节课: 导入导出素材，建立蒙版</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" >
                     <view class="id">5</view>
                     <view class="item-info">
-                        <view class="title">【第五节课】 动效的简单应用</view>
+                        <view class="title">第五节课: 动效的简单应用</view>
                         <view class="time">32:10</view>
                     </view>
                 </view>

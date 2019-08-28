@@ -52,7 +52,6 @@ text {
 .date .day {
   line-height: 32rpx;
   margin-top: 19rpx;
-  font-weight: bold;
 }
 .is-today {
   color: white;

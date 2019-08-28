@@ -1,7 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#fff",
-  "navigationBarTitleText": "我的积分",
-  "backgroundTextStyle": "dark",
-  "navigationBarTextStyle": "black"
+  "usingComponents": {
+    "ec-canvas": "../../../ec-canvas/ec-canvas"
+  },
+  "navigationBarTitleText": "我的积分"
 }

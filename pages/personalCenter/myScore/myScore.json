@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "ec-canvas": "../../../ec-canvas/ec-canvas"
+  },
   "navigationBarBackgroundColor": "#fff",
   "navigationBarTitleText": "我的成绩",
   "backgroundTextStyle": "dark",
