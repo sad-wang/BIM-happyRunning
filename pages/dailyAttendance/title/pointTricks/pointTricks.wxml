@@ -1,2 +1,29 @@
 <!--pages/dailyAttendance/title/pointTricks/pointTricks.wxml-->
-<text>pages/dailyAttendance/title/pointTricks/pointTricks.wxml</text>
+<view class="point">
+    <image src="../../../../images/title/pointTricksBg.png" />
+    <view class="mypoint-box"><x>200</x>积分</view>
+    <view class="process">课外成绩换算+20</view>
+</view>
+<view class="tricks">
+    <view class="row head">
+        <view>积分攻略</view>
+        <view>积分</view>
+        <view>课外成绩</view>
+    </view>
+    <view class="row">
+        <view>当日达到2.0公里</view>
+        <view>+1</view>
+        <view>+0.1</view>
+    </view>
+    <view class="row">
+        <view>当日达到3.5公里</view>
+        <view>+2</view>
+        <view>+0.2</view>
+    </view>
+    <view class="row">
+        <view>当日达到5.0公里</view>
+        <view>+3</view>
+        <view>+0.3</view>
+    </view>
+</view>
+<view class="complain">步数结算时间为每天24点之前</view>
