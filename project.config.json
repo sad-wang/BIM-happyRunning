@@ -13,7 +13,7 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.0",
+	"libVersion": "2.8.1",
 	"appid": "wx3990fc95166ced01",
 	"projectname": "BIM-happyRunning",
 	"debugOptions": {
