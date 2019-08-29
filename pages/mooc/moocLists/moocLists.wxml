@@ -13,5 +13,8 @@
                 </view>
             </view>
         </view>
+        <view class="bottom">
+            已经到底啦，去看看其他课程~
+        </view>
     </view>
 </scroll-view>

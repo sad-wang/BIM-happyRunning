@@ -1,82 +1,11 @@
 /* pages/personalCenter/myMooc/myMooc.wxss */
-.mooc-container{
-    display: flex;
-    flex-direction: column;
-}
-.mooc-container .mooc-lists .list-item{
-    height: 180rpx;
-    width: calc(100vw);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.mooc-container .mooc-lists .list-item .item-inner {
-    padding: 30rpx 0;
-    height: 119rpx;
-    width: calc(100vw + 200rpx);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    justify-content: space-between;
-    padding-left: 30rpx;
-    border-bottom: #e7eaeb solid 1rpx;
-
-}
-.mooc-container .mooc-lists .list-item .item-inner .item-image{
-    width: 119rpx;
-    height: 119rpx;
-    border-radius: 7rpx;
-}
-.mooc-container .mooc-lists .list-item .item-inner .item-content{
-
-    width: 300rpx;
-    height: 119rpx;
-    border-radius: 7rpx;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.mooc-container .mooc-lists .list-item .item-inner .item-content .content-title{
-    font-weight: bold;
-    font-size: 30rpx;
-    line-height: 32rpx;
-}
-.mooc-container .mooc-lists .list-item .item-inner .item-content .content-text{
-    font-size: 25rpx;
-    color: #c7ccd2;
-}
-.mooc-container .mooc-lists .list-item .item-inner .item-period{
-    font-size: 24rpx;
-    font-weight: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 119rpx;
-    align-items: flex-end;
-    margin-right: 30rpx;
-}
-.mooc-container .mooc-lists .list-item .item-inner .item-period .total-period{
-    color: #f8a348;
-    width: 100rpx;
-    height: 42 rpx;
-    line-height: 42rpx;
-    border-radius: 17rpx;
-    background-color: #f0f2f3;
-    text-align: center;
-}
-.mooc-container .mooc-lists .list-item .delete-btn{
-    width: 200rpx;
-    font-family: PingFangSC-Regular;
-    font-size: 36rpx;
-    letter-spacing: 2rpx;
-    color: #FFFFFF;
-    line-height: 180rpx;
-    height: 180rpx;
-    background: #ff2241;
-    text-align: center;
-}
-
+.mooc-container{display: flex;flex-direction: column;}
+.mooc-container .mooc-lists .list-item{height: 180rpx;width: calc(100vw);display: flex;flex-direction: row;justify-content: center;align-items: center;position: relative;}
+.mooc-container .mooc-lists .list-item .item-inner {padding: 30rpx 0;height: 119rpx;width: calc(100vw + 200rpx);display: flex;flex-direction: row;align-items: center;justify-content: space-between;padding-left: 30rpx;border-bottom: #e7eaeb solid 1rpx;}
+.mooc-container .mooc-lists .list-item .item-inner .item-image{width: 119rpx;height: 119rpx;border-radius: 7rpx;}
+.mooc-container .mooc-lists .list-item .item-inner .item-content{width: 300rpx;height: 119rpx;border-radius: 7rpx;display: flex;flex-direction: column;justify-content: space-between;}
+.mooc-container .mooc-lists .list-item .item-inner .item-content .content-title{font-weight: bold;font-size: 30rpx;line-height: 32rpx;}
+.mooc-container .mooc-lists .list-item .item-inner .item-content .content-text{font-size: 25rpx;color: #c7ccd2;}
+.mooc-container .mooc-lists .list-item .item-inner .item-period{font-size: 24rpx;font-weight: normal;display: flex;flex-direction: column;justify-content: space-between;height: 119rpx;align-items: flex-end;margin-right: 30rpx;}
+.mooc-container .mooc-lists .list-item .item-inner .item-period .total-period{color: #f8a348;width: 100rpx;height: 42 rpx;line-height: 42rpx;border-radius: 17rpx;background-color: #f0f2f3;text-align: center;}
+.mooc-container .mooc-lists .list-item .delete-btn{width: 200rpx;font-size: 36rpx;letter-spacing: 2rpx;color: #FFFFFF;line-height: 180rpx;height: 180rpx;background: #ff2241;text-align: center;}

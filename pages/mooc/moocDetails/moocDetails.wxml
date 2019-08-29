@@ -1,11 +1,10 @@
 <!--pages/mooc/moocDetails/moocDetails.wxml-->
 <view class="container">
-    <view class="video">
-        <view class="video-inner">
-            <video autoplay src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></video>
-            <view class="video-title">PPT设计课程：李老师20天让你从菜鸟到高手的华丽
-                蜕变</view>
-            <view class="video-info">
+    <view class="vitem-numbereo">
+        <view class="vitem-numbereo-inner">
+            <vitem-numbereo class="vitem-numbereo-content" autoplay src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvitem-numbereodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizitem-number=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></vitem-numbereo>
+            <view class="vitem-numbereo-title">PPT设计课程：李老师20天让你从菜鸟到高手的华丽蜕变</view>
+            <view class="vitem-numbereo-info">
                 <view class="teacher">主讲人：文双</view>
                 <view class="number">15节课:·24小时</view>
             </view>
@@ -17,85 +16,84 @@
                 <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="clickTab">课程介绍</view>
                 <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">课程目录</view>
             </view>
-            <scroll-view scroll-y  enable-flex class="content"  wx:if="{{0==currentTab}}">
-                <view class="content-title">内容大纲</view>
-                <view class="content-mian">
+            <scroll-view scroll-y  enable-flex class="detail-content detail-introduction"  wx:if="{{0==currentTab}}">
+                <view class="introduction-title">内容大纲</view>
+                <view class="introduction-mian">
                     学校现有教职工2360人，其中专任教师1497人。师资队伍中具有博士学位的479人，具有硕士学位的873人；正高级专业技术人员198人，副高级427人；博士生导师42人，硕士生导师418人。现有“海洋环境混凝土技术”创新引智基地（国家“111计划”）。特聘中国科学院院士1人、中国工程院院士6人、外籍俄罗斯联邦科学院院士1人。现有国家“千人计划”人选3人，百千万人才工程国家级人选4人，教育部新世纪优秀人才支持计划获得者3人，享受国务院政府特殊津贴的专家23人；泰山学者优势特色学科领军人才1人，泰山学者10人，山东省高等学校首席专家6人，山东省有突出贡献的中青年专家12人，山东省自然科学杰出青年基金获得者1人，青岛市创新领军人才4人；拥有国家教学名师1人，全国模范教师1人，全国优秀教师7人，山东省教学名师11人。
                 </view>
             </scroll-view>
-            <scroll-view scroll-y  enable-flex class="content" wx:if="{{1==currentTab}}">
-                <view class="item" >
-                    <view class="id">1</view>
+            <scroll-view scroll-y  enable-flex class="detail-content detail-catalogue" wx:if="{{1==currentTab}}">
+                <view class="catalogue-item" >
+                    <view class="item-number">1</view>
                     <view class="item-info">
-                        <view class="title">第一节课: 认识ppt所有工具</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第一节课: 认识ppt所有工具</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">2</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">2</view>
                     <view class="item-info">
-                        <view class="title">第二节课: 动效的简单应用</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第二节课: 动效的简单应用</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">3</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">3</view>
                     <view class="item-info">
-                        <view class="title">第三节课: 我太难了</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第三节课: 我太难了</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">4</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">4</view>
                     <view class="item-info">
-                        <view class="title">第四节课: 导入导出素材，建立蒙版</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第四节课: 导入导出素材，建立蒙版</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">5</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">5</view>
                     <view class="item-info">
-                        <view class="title">第五节课: 动效的简单应用</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第五节课: 动效的简单应用</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">1</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">1</view>
                     <view class="item-info">
-                        <view class="title">第一节课: 认识ppt所有工具</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第一节课: 认识ppt所有工具</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">2</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">2</view>
                     <view class="item-info">
-                        <view class="title">第二节课: 动效的简单应用</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第二节课: 动效的简单应用</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">3</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">3</view>
                     <view class="item-info">
-                        <view class="title">第三节课: 我太难了</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第三节课: 我太难了</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">4</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">4</view>
                     <view class="item-info">
-                        <view class="title">第四节课: 导入导出素材，建立蒙版</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第四节课: 导入导出素材，建立蒙版</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
-                <view class="item" >
-                    <view class="id">5</view>
+                <view class="catalogue-item" >
+                    <view class="item-number">5</view>
                     <view class="item-info">
-                        <view class="title">第五节课: 动效的简单应用</view>
-                        <view class="time">32:10</view>
+                        <view class="info-title">第五节课: 动效的简单应用</view>
+                        <view class="info-duration">32:10</view>
                     </view>
                 </view>
             </scroll-view>
         </view>
     </view>
-
 </view>

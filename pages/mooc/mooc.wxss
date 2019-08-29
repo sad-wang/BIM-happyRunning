@@ -1,172 +1,27 @@
 /* pages/mooc/mooc.wxss */
-scroll-view{
-
-}
-scroll-view .search{
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-}
-scroll-view .search .box{
-    width: 690rpx;
-    border-radius: 4rpx;
-    background-color: #f3f5f6;
-    height: 55rpx;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-scroll-view .search .box .icon{
-    height: 30rpx;
-    width: 30rpx;
-    margin-left: 22rpx;
-    margin-right: 16rpx;
-}
-scroll-view .search .box input{
-    flex: 1;
-    height: 32rpx;
-    min-height:32rpx;
-    font-size: 26rpx;
-    color: #bec3cb;
-    line-height: 32rpx;
-}
-scroll-view .category{
-    height: 12vh;
-    width: 690rpx;
-}
-scroll-view .category .category-inner{
-    height: 12vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 35rpx;
-}
-scroll-view .category .category-inner .category-item{
-    height: 98rpx;
-    width: 150rpx;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 37rpx;
-    justify-content: space-around;
-}
-scroll-view .category .category-inner .category-item .item-icon{
-    width: 52rpx;
-    height: 52rpx;
-}
-scroll-view .category .category-inner .category-item .item-name {
-    font-size: 20rpx;
-    width: 60rpx;
-    color: #c7ccd2;
-    text-align: center;
-}
-scroll-view .recommend{
-    height: 386rpx;
-    display: flex;
-    flex-direction: column;
-    width: 690rpx;
-    margin: 0 auto;
-    justify-content: space-evenly;
-}
-scroll-view view .title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-scroll-view view .title .main-title{
-    flex: 1;
-    font-size: 28rpx;
-    color: #000;
-}
-scroll-view view .title .all{
-    font-size: 24rpx;
-    color: #c7ccd2;
-}
-scroll-view view .title .next-triangle{
-    margin-left: 21rpx;
-    width: 14rpx;
-    height: 20rpx;
-}
-scroll-view .recommend .content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-scroll-view .recommend .content .content-item .item-image{
-    width: 328rpx;
-    height: 219rpx;
-    border-radius: 9rpx;
-}
-scroll-view .recommend .content .content-item .item-title{
-    font-size: 24rpx;
-    font-weight: bolder;
-}
-scroll-view .recommend .content .content-item .item-subtitle{
-    font-size: 20rpx;
-    color: #c7ccd2;
-}
-scroll-view .mooc-lists{
-    display: flex;
-    flex-direction: column;
-    width: 690rpx;
-    margin: 0 auto;
-    margin-top: 20rpx;
-}
-
-scroll-view .scroll-view-item {
-    border-bottom: #e7eaeb solid 1rpx;
-    height: 119rpx;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 29rpx;
-}
-scroll-view .scroll-view-item image{
-    width: 119rpx;
-    height: 119rpx;
-    border-radius: 7rpx;
-}
-scroll-view .scroll-view-item .content{
-    width: 119rpx;
-    height: 119rpx;
-    border-radius: 7rpx;
-    flex: 1;
-    padding: 0 30rpx;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-scroll-view .scroll-view-item .content .content-title{
-    font-weight: bold;
-    font-size: 30rpx;
-}
-scroll-view .scroll-view-item .content .content-text{
-    font-size: 25rpx;
-    color: #c7ccd2;
-}
-scroll-view .scroll-view-item .number{
-    font-size: 24rpx;
-    font-weight: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    height: 119rpx;
-    justify-content: center;
-}
-scroll-view .scroll-view-item .number .all-number{
-    color: #f8a348;
-    width: 100rpx;
-    height: 42 rpx;
-    line-height: 42rpx;
-    border-radius: 17rpx;
-    background-color: #f0f2f3;
-    text-align: center;
-}
-scroll-view .bottom{
-    color: #c7ccd2;
-    height: 200rpx;
-    line-height: 200rpx;
-    font-size: 24rpx;
-    text-align: center;
-}
-
+.container .search{height: 8vh;display: flex;justify-content: center;}
+.container .search .search-box{width: 690rpx;border-radius: 4rpx;background-color: #f3f5f6;height: 55rpx;display: flex;flex-direction: row;align-items: center;}
+.container .search .search-box .icon{height: 30rpx;width: 30rpx;margin-left: 22rpx;margin-right: 16rpx;}
+.container .search .search-box .content{flex: 1;height: 32rpx;min-height:32rpx;font-size: 26rpx;color: #bec3cb;line-height: 32rpx;}
+.container .category{height: 12vh;width: 690rpx;}
+.container .category .category-inner{height: 12vh;display: flex;flex-direction: row;align-items: center;margin: 0 35rpx;}
+.container .category .category-inner .category-item{height: 98rpx;width: 150rpx;display: flex;flex-direction: column;align-items: center;margin: 0 37rpx;justify-content: space-around;}
+.container .category .category-inner .category-item .item-icon{width: 52rpx;height: 52rpx;}
+.container .category .category-inner .category-item .item-name {font-size: 20rpx;width: 60rpx;color: #c7ccd2;text-align: center;}
+.container .recommend{height: 386rpx;display: flex;flex-direction: column;width: 690rpx;margin: 0 auto;justify-content: space-evenly;}
+.container .section .section-title{display: flex;flex-direction: row;align-items: center;}
+.container .section .section-title .main-title{flex: 1;font-size: 28rpx;color: #000;}
+.container .section .section-title .all{font-size: 24rpx;color: #c7ccd2;}
+.container .section .section-title .next-triangle{margin-left: 21rpx;width: 14rpx;height: 20rpx;}
+.container .recommend .recommend-content{display: flex;flex-direction: row;justify-content: space-between;}
+.container .recommend .recommend-content .content-item .item-image{width: 328rpx;height: 219rpx;border-radius: 9rpx;}
+.container .recommend .recommend-content .content-item .item-title{font-size: 24rpx;font-weight: bolder;}
+.container .recommend .recommend-content .content-item .item-subtitle{font-size: 20rpx;color: #c7ccd2;}
+.container .mooc-lists{display: flex;flex-direction: column;width: 690rpx;margin: 0 auto;margin-top: 20rpx;}
+.container .mooc-lists .lists-item {border-bottom: #e7eaeb solid 1rpx;height: 119rpx;display: flex;flex-direction: row;align-items: center;padding: 29rpx;}
+.container .mooc-lists .lists-item .item-image{width: 119rpx;height: 119rpx;border-radius: 7rpx;}
+.container .mooc-lists .lists-item .item-content{width: 119rpx;height: 119rpx;border-radius: 7rpx;flex: 1;padding: 0 30rpx;display: flex;flex-direction: column;justify-content: space-between;}
+.container .mooc-lists .lists-item .item-content .content-title{font-weight: bold;font-size: 30rpx;}
+.container .mooc-lists .lists-item .item-content .content-text{font-size: 25rpx;color: #c7ccd2;}
+.container .mooc-lists .lists-item .item-period{font-size: 24rpx;font-weight: normal;display: flex;flex-direction: column;align-items: flex-end;height: 119rpx;justify-content: center;}
+.container .mooc-lists .lists-item .item-period .all-number{color: #f8a348;width: 100rpx;height: 42 rpx;line-height: 42rpx;border-radius: 17rpx;background-color: #f0f2f3;text-align: center;}
