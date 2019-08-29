@@ -4,7 +4,7 @@
     <view class="swiper-item">月排行</view>
     <view class="swiper-item">年排行</view>
 </view>
-<view class="">
+<view class="rank">
     <view class="list first-student">
         <image src="../../../images/rank/medal1.png" />
         <view class="student">
