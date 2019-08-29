@@ -1,2 +1,67 @@
 <!--pages/dailyAttendance/rank/rank.wxml-->
-<text>pages/dailyAttendance/rank/rank.wxml</text>
+<view class="swiper">
+    <view class="swiper-item checked">日排行</view>
+    <view class="swiper-item">月排行</view>
+    <view class="swiper-item">年排行</view>
+</view>
+<view class="">
+    <view class="list first-student">
+        <image src="../../../images/rank/medal1.png" />
+        <view class="student">
+            <image class="student-protrait-bg" src="../../../images/rank/first.png" />
+            <image class="student-protrait" src="../../../images/rank/protrait1.png" />
+            <view class="student-id">肖战</view>
+        </view>
+        <image class="shoes" src="../../../images/rank/shoes.png"/>
+        <view class="mileage">3.61公里</view>
+    </view>
+    <view class="list">
+        <image src="../../../images/rank/medal2.png" />
+        <view class="student">
+            <image class="student-protrait" src="../../../images/rank/protrait2.png" />
+            <view class="student-id">张晓松</view>
+        </view>
+        <view class="mileage">3.5公里</view>
+    </view>
+    <view class="list">
+        <image src="../../../images/rank/medal3.png" />
+        <view class="student">
+            <image class="student-protrait" src="../../../images/rank/protrait3.png" />
+            <view class="student-id">花间一亩田</view>
+        </view>
+        <view class="mileage">3.0公里</view>
+    </view>
+    <view class="list">
+        <view class="num">4</view>
+        <view class="student">
+            <image class="student-protrait" src="../../../images/rank/protrait4.png" />
+            <view class="student-id">高林林</view>
+        </view>
+        <view class="mileage">2.6公里</view>
+    </view>
+    <view class="list">
+        <view class="num">5</view>
+        <view class="student">
+            <image class="student-protrait" src="../../../images/rank/protrait5.png" />
+            <view class="student-id">钱小华</view>
+        </view>
+        <view class="mileage">2.5公里</view>
+    </view>
+    <view class="list">
+        <view class="num me">6</view>
+        <view class="student">
+            <image class="student-protrait" src="../../../images/rank/protrait6.png" />
+            <view class="student-id">小甜甜</view>
+        </view>
+        <view class="mileage">2.3公里</view>
+    </view>
+    <view class="list">
+        <view class="num">7</view>
+        <view class="student">
+            <image class="student-protrait" src="../../../images/rank/protrait5.png" />
+            <view class="student-id">不见森林</view>
+        </view>
+        <view class="mileage">2.0公里</view>
+    </view>
+</view>
+<view class="more">点击查看更多</view>
