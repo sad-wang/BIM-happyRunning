@@ -19,11 +19,11 @@
             <view class="section-content">
                 <view class="section-content-item">
                     <text>总成绩</text>
-                    <text class="number">2.9分</text>
+                    <text class="value">2.9分</text>
                 </view>
                 <view class="section-content-item">
                     <text>今日得分</text>
-                    <text class="number">20.3分</text>
+                    <text class="value">20.3分</text>
                 </view>
             </view>
         </view>
@@ -35,11 +35,11 @@
             <view class="section-content">
                 <view class="section-content-item">
                         <text>总积分</text>
-                        <text class="number">11分</text>
+                        <text class="value">11分</text>
                 </view>
                 <view class="section-content-item">
                     <text>今日积分</text>
-                    <text class="number">+3分</text></view>
+                    <text class="value">+3分</text></view>
             </view>
         </view>
         <view class="section my-mooc" bindtap="navTo"  data-url="./myMooc/myMooc">

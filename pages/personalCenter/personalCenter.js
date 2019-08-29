@@ -2,7 +2,6 @@
 const app = getApp()
 Page({
   data: {
-
   },
   navTo:function(e) {
     wx.navigateTo({
@@ -12,5 +11,4 @@ Page({
   onLoad: function () {
 
   },
-
 })
