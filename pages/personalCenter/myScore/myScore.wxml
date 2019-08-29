@@ -53,7 +53,7 @@
                         </view>
                         <view class="number">+3</view>
                     </view>
-                    <view   class="scroll-view-item">
+                    <view class="scroll-view-item">
                         <image class="item-image"src="../../../images/icon-match.png"></image>
                         <view class="content">
                             <view class="content-title">绘画比赛</view>
