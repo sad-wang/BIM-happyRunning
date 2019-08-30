@@ -53,7 +53,7 @@
     width: 60rpx;
     height: 49rpx;
     margin:  0 43rpx 0 60rpx;
-    font-size: 48rpx;
+    font-size: 24rpx;
     line-height: 49rpx;
 
 }
