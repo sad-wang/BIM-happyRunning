@@ -3,5 +3,7 @@
   "navigationBarBackgroundColor": "#fff",
   "navigationBarTitleText": "校友排名",
   "backgroundTextStyle": "dark",
-  "navigationBarTextStyle": "black"
+  "navigationBarTextStyle": "black",
+  "disableScroll": true
+
 }
