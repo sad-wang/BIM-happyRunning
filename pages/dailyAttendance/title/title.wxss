@@ -3,6 +3,7 @@ text {
     display: block;
 }
 .my-level {
+    position: relative;
     width: 750rpx;
     height: 213rpx;
     margin-bottom: 30rpx;
@@ -13,7 +14,7 @@ text {
     z-index: -1;
     width: 1258rpx;
     height: 304rpx;
-    background: linear-gradient(to bottom, rgb(102, 243, 243, 1), rgb(46, 204, 228, 1));
+    background: linear-gradient(to bottom, rgba(102, 243, 243, 1), rgba(46, 204, 228, 1));
     border-radius: 50%;
     transform:  translateX(-262rpx) translateY(-91rpx);
 
