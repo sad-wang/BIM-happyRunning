@@ -5,10 +5,10 @@
 .container .statistics .score{font-size:34rpx;color:#000;font-weight:bold;}
 .container .statistics .chart{width:100%;height:200rpx;position:relative;display:flex;flex-direction:row;align-items:center;justify-content:space-between;}
 .container .statistics .chart .pie {height:240rpx;width:250rpx;display:flex;flex-direction:column;align-items:center;justify-content:space-between;box-sizing:border-box;}
-.container .statistics .chart .chart-data {height:200rpx;width:392rpx;display:flex;flex-direction:column;justify-content:space-evenly;box-sizing:border-box;font-size:24rpx;}
+.container .statistics .chart .chart-data {height:200rpx;width:392rpx;display:flex;flex-direction:column;justify-content:space-evenly;box-sizing:border-box;font-size:25rpx;}
 .container .statistics .chart .chart-data .data-item {display:flex;flex-direction:row;align-items:center;}
 .container .statistics .chart .chart-data .data-item .block{width:20rpx;height:20rpx;border-radius:1rpx;margin:0 18rpx;}
-.container .statistics .chart .chart-data .data-item .data-name{flex:1;}
+.container .statistics .chart .chart-data .data-item .data-name{flex:1;font-weight: bold;}
 .container .detail{flex:2;display:flex;flex-direction:column;}
 .container .detail .detail-tab{display:flex;flex-direction:row;justify-content:space-around;border-bottom:1rpx solid #c7ccd2;font-size:24rpx;line-height:64rpx;color:#c7ccd2;font-weight:bolder;}
 .container .detail .detail-tab .swiper-tab-item{letter-spacing:2rpx;}

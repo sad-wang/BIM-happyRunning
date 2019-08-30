@@ -23,6 +23,7 @@ Page({
 
   onLoad:function(options){
     optionData = {
+      backgroundColor:'#fff',
       color:['#c7ccd2', '#9457e6','#57d3e6'],
       series: [
         {
