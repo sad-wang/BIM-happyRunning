@@ -1,10 +1,11 @@
 <!--pages/mooc/moocDetails/moocDetails.wxml-->
 <view class="container">
-    <view class="vitem-numbereo">
-        <view class="vitem-numbereo-inner">
-            <vitem-numbereo class="vitem-numbereo-content" autoplay src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvitem-numbereodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizitem-number=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></vitem-numbereo>
-            <view class="vitem-numbereo-title">PPT设计课程：李老师20天让你从菜鸟到高手的华丽蜕变</view>
-            <view class="vitem-numbereo-info">
+    <view class="video">
+        <view class="video-inner">
+            <video class="video-content" autoplay src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></video>
+            <view class="video-title">PPT设计课程：李老师20天让你从菜鸟到高手的华丽
+                蜕变</view>
+            <view class="video-info">
                 <view class="teacher">主讲人：文双</view>
                 <view class="number">15节课:·24小时</view>
             </view>
