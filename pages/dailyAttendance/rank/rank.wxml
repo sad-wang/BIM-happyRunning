@@ -75,7 +75,7 @@
                     <image class="student-protrait" src="../../../images/rank/protrait4.png" />
                     <view class="student-id">林林</view>
                 </view>
-                <view class="mileage">2.9公里</view>
+                <view class="mileage">1.9公里</view>
             </view>
             <view class="list">
                 <view class="num">9</view>
@@ -83,7 +83,7 @@
                     <image class="student-protrait" src="../../../images/rank/protrait5.png" />
                     <view class="student-id">钱小森</view>
                 </view>
-                <view class="mileage">2.8公里</view>
+                <view class="mileage">1.8公里</view>
             </view>
             <view class="list">
                 <view class="num">10</view>
@@ -145,16 +145,24 @@
                 </view>
                 <view class="mileage">2.6公里</view>
             </view>
-        </scroll-view>
-        <!--自己的排名-->
-        <view class="list me">
-            <view class="num">4</view>
-            <view class="student">
-                <image class="student-protrait" src="../../../images/rank/protrait4.png" />
-                <view class="student-id">高林林</view>
+            <view class="list">
+                <view class="num">5</view>
+                <view class="student">
+                    <image class="student-protrait" src="../../../images/rank/protrait5.png" />
+                    <view class="student-id">不见森林</view>
+                </view>
+                <view class="mileage">2.0公里</view>
             </view>
-            <view class="mileage">2.6公里</view>
-        </view>
+          </scroll-view>
+        <!--自己的排名-->
+          <view class="list me">
+              <view class="num">5</view>
+              <view class="student">
+                  <image class="student-protrait" src="../../../images/rank/protrait5.png" />
+                  <view class="student-id">不见森林</view>
+              </view>
+              <view class="mileage">2.0公里</view>
+          </view>
     </swiper-item>
     <!--年排行-->
     <swiper-item class="yearly-rank">
@@ -174,13 +182,21 @@
             <view class="list">
                 <image src="../../../images/rank/medal2.png" />
                 <view class="student">
+                    <image class="student-protrait" src="../../../images/rank/protrait5.png" />
+                    <view class="student-id">不见森林</view>
+                </view>
+                <view class="mileage">3.6公里</view>
+            </view>
+            <view class="list">
+                <image src="../../../images/rank/medal3.png" />
+                <view class="student">
                     <image class="student-protrait" src="../../../images/rank/protrait2.png" />
                     <view class="student-id">张晓松</view>
                 </view>
                 <view class="mileage">3.5公里</view>
             </view>
             <view class="list">
-                <image src="../../../images/rank/medal3.png" />
+                <view class="num">4</view>
                 <view class="student">
                     <image class="student-protrait" src="../../../images/rank/protrait3.png" />
                     <view class="student-id">花间一亩田</view>
@@ -188,7 +204,7 @@
                 <view class="mileage">3.0公里</view>
             </view>
             <view class="list">
-                <view class="num">4</view>
+                <view class="num">5</view>
                 <view class="student">
                     <image class="student-protrait" src="../../../images/rank/protrait4.png" />
                     <view class="student-id">高林林</view>
@@ -198,12 +214,12 @@
         </scroll-view>
         <!--自己的排名-->
         <view class="list me">
-                <image src="../../../images/rank/medal1.png" />
-                <view class="student">
-                    <image class="student-protrait" src="../../../images/rank/protrait1.png" />
-                    <view class="student-id">肖战</view>
-                </view>
-                <view class="mileage">3.61公里</view>
+            <image src="../../../images/rank/medal2.png" />
+            <view class="student">
+                <image class="student-protrait" src="../../../images/rank/protrait5.png" />
+                <view class="student-id">不见森林</view>
             </view>
+            <view class="mileage">3.6公里</view>
+        </view>
     </swiper-item>
 </swiper>
