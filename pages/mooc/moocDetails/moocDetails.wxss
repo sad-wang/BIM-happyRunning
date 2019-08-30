@@ -10,11 +10,11 @@
 .container .detail .detail-inner .tab{height: 6vh;display: flex;flex-direction: row;width: 509rpx;justify-content: space-between;}
 .container .detail .detail-inner .tab .tab-item{font-weight: bolder;font-size: 24rpx;color: #cccccc;height: 6vh;line-height: 6vh;}
 .container .detail .detail-inner .tab .tab-item.active{color: #57d3e6;border-bottom: 5rpx #57d3e6 solid;}
-.container .detail .detail-inner .detail-content{font-size: 24rpx;letter-spacing: 1rpx;height: 50vh;}
+.container .detail .detail-inner .detail-content{font-size: 25rpx;letter-spacing: 1rpx;height: 50vh;}
 .container .detail .detail-inner .detail-introduction .introduction-title{font-weight: bolder;margin-top: 32rpx;}
 .container .detail .detail-inner .detail-introduction .introduction-mian{text-indent: 50rpx;margin: 29rpx;line-height: 48rpx;}
 .container .detail .detail-inner .detail-catalogue .catalogue-item{display: flex;flex-direction: row;border-bottom: 1rpx #e7eaeb solid;height: 95rpx;align-items: center;}
-.container .detail .detail-inner .detail-catalogue .catalogue-item .item-number{align-self: flex-start;margin: 26rpx 32rpx 13rpx 0;color: #cccccc;font-size: 30rpx;}
+.container .detail .detail-inner .detail-catalogue .catalogue-item .item-number{align-self: flex-start;margin: 13rpx 32rpx 13rpx 0;font-size: 30rpx;}
 .container .detail .detail-inner .detail-catalogue .catalogue-item .item-info{flex: 1;display: flex;flex-direction: column;font-size: 24rpx;}
 .container .detail .detail-inner .detail-catalogue .catalogue-item .item-info .info-title{font-weight: bold;}
 .container .detail .detail-inner .detail-catalogue .catalogue-item .item-info .info-duration{color: #cccccc;}
