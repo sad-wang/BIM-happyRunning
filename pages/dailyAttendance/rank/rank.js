@@ -16,18 +16,15 @@ Page({
   },
 
   swiperTab: function(e) {
-    var that = this;
-    that.setData({
+    this.setData({
       currentTab: e.detail.current
     });
   },
   clickTab: function(e) {
-    console.log(1);
-    var that = this;
     if (this.data.currentTab === e.target.dataset.current) {
       return false;
     } else {
-      that.setData({
+      this.setData({
         currentTab: e.target.dataset.current
       })
     }

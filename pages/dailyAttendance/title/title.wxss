@@ -69,7 +69,7 @@ text {
 }
 
 /*--------等级积分模块--------*/
-/*三列flex布局*/
+/*多行flex布局*/
 .level-list {
     display: flex;
     flex-flow: row wrap;
