@@ -11,31 +11,31 @@
     <view class="date-form">
       <view class="date">
         <view class="week">一</view>
-        <view class="day">13</view>
+        <view class="day {{dayOfWeek==1?'is-today':''}}">{{date1}}</view>
       </view>
       <view class="date">
         <view class="week">二</view>
-        <view class="day">14</view>
+        <view class="day {{dayOfWeek==2?'is-today':''}}">{{date2}}</view>
       </view>
       <view class="date">
         <view class="week">三</view>
-        <view class="day is-today">15</view>
+        <view class="day {{dayOfWeek==3?'is-today':''}}">{{date3}}</view>
       </view>
       <view class="date">
         <view class="week">四</view>
-        <view class="day">16</view>
+        <view class="day {{dayOfWeek==4?'is-today':''}}">{{date4}}</view>
       </view>
       <view class="date">
         <view class="week">五</view>
-        <view class="day">17</view>
+        <view class="day {{dayOfWeek==5?'is-today':''}}">{{date5}}</view>
       </view>
       <view class="date">
         <view class="week">六</view>
-        <view class="day">18</view>
+        <view class="day {{dayOfWeek==6?'is-today':''}}">{{date6}}</view>
       </view>
       <view class="date">
-        <view class="week">七</view>
-        <view class="day">19</view>
+        <view class="week">日</view>
+        <view class="day {{dayOfWeek==7?'is-today':''}}">{{date7}}</view>
       </view>
     </view>
   </view>
