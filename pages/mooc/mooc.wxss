@@ -3,8 +3,8 @@
 .container .search .search-box{width: 690rpx;border-radius: 4rpx;background-color: #f3f5f6;height: 60rpx;display: flex;flex-direction: row;align-items: center;}
 .container .search .search-box .icon{height: 36rpx;width: 36rpx;margin-left: 22rpx;margin-right: 16rpx;}
 .container .search .search-box .content{flex: 1;height: 42rpx;min-height:32rpx;font-size: 26rpx;color: #bec3cb;line-height: 42rpx;}
-.container .category{height: 152rpx;width: 690rpx; margin: 0 auto; overflow: hidden;}
-.container .category .category-inner{height: 152rpx;display: flex;flex-direction: row;align-items: center;margin: 0 12rpx;}
+.container .category{height: 152rpx;width: 666rpx; margin: 0 auto; overflow: hidden;}
+.container .category .category-inner{height: 152rpx;display: flex;flex-direction: row;align-items: center;}
 .container .category .category-inner .category-item{height: 98rpx;display: flex;flex-direction: column;align-items: center;margin-right: 85rpx;}
 .container .category .category-inner .category-item .item-icon{width: 54rpx;height: 54rpx;margin-bottom: 12rpx}
 .container .category .category-inner .category-item .item-name {font-size: 22rpx;width: 66rpx;color: #c7ccd2;text-align: center;}
