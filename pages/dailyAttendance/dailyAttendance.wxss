@@ -26,8 +26,9 @@ text {
 }
 /*奖牌*/
 .medal {
-  width: 60rpx;
-  height: 44rpx;
+  margin-top: -10rpx;
+  width: 75rpx;
+  height: 55rpx;
 }
 /*日期模块*/
 .date-form {
@@ -114,11 +115,11 @@ text {
 }
 .hist1, .hist3, .hist4, .hist5, .hist6 {
   height: 5rpx;
-  
+
 }
 .hist2 {
   height: 43rpx;
- 
+
 }
 .hist7 {
     height: 87rpx;
@@ -188,7 +189,7 @@ text {
   left: 143rpx;
   width: 404rpx;
   height: 306rpx;
-} 
+}
 
 /*奖牌抖动*/
 @keyframes shake {

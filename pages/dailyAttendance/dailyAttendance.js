@@ -86,17 +86,18 @@ Page({
       date5: dateArray[4],
       date6: dateArray[5],
       date7: dateArray[6],
-      dayOfWeek: dateArray[7]
+      dayOfWeek: dateArray[7],
     })
 },
   onShow:function () {
     this.setData({
-      Shake: 1
-    })
-  },
-  onHide:function () {
-    this.setData({
       Shake: 0
     })
-  }
+    let interval = setInterval(()=> {
+        this.setData({
+          Shake: 1
+        })
+        clearInterval(interval)
+    },100)
+  },
 })
