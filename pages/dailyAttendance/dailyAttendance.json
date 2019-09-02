@@ -1,7 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#fff",
-  "navigationBarTitleText": "日常运动",
-  "backgroundTextStyle": "dark",
-  "navigationBarTextStyle": "black"
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  },
+  "navigationBarTitleText": "日常运动"
 }

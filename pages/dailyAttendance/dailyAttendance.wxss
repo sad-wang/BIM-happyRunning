@@ -179,17 +179,7 @@ text {
   width: 690rpx;
   height: 385rpx;
 }
-.schedule-text {
-  font-size: 29rpx;
-  letter-spacing: 3rpx;
-}
-.schedule image {
-  position: absolute;
-  top: 81rpx;
-  left: 143rpx;
-  width: 404rpx;
-  height: 306rpx;
-}
+
 
 /*奖牌抖动*/
 @keyframes shake {
@@ -220,4 +210,12 @@ text {
 }
 .shake {
   animation: shake 0.8s;
+}
+ec-canvas {
+  position: absolute;
+  left: 100rpx;
+  width: 500rpx;
+  height: 500rpx;
+  top: 0rpx;
+  z-index: -1;
 }

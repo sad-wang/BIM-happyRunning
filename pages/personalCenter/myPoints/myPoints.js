@@ -1,7 +1,5 @@
 // pages/personalCenter/myPoints/myPoints.js
-
 import * as echarts from '../../../ec-canvas/echarts';
-const app = getApp();
 let chart = null;
 let optionData = null;
 //初始化 chart
