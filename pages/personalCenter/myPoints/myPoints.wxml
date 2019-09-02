@@ -8,7 +8,7 @@
                 <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
             </view>
             <view class="chart-data">
-                <view  class="data-item" wx:for="{{optionData.series[0].data}}" wx:if="{{index>0}}">
+                <view  class="data-item" wx:for="{{optionData.series[0].data}}">
                     <view class="block" style="background-color:{{optionData.color[index]}};"></view>
                     <view class="data-name">{{item.name}}</view>
                     <view class="data-value">{{item.value}}</view>
