@@ -5,7 +5,7 @@
     <view class="title">
       <view class="daily-punch">日常打卡</view>
       <navigator url="./title/title">
-        <image class="medal" src="../../images/dailyAttendanceImage/medal.png" />
+        <image class="medal {{Shake==1?'shake':''}}" src="../../images/dailyAttendanceImage/medal.png" />
     </navigator>
     </view> 
     <view class="date-form">
