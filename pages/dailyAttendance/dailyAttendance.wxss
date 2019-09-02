@@ -189,3 +189,34 @@ text {
   width: 404rpx;
   height: 306rpx;
 } 
+
+/*奖牌抖动*/
+@keyframes shake {
+12%{
+  transform: rotate(10deg);
+}
+25%{
+  transform: rotate(0deg);
+}
+37%{
+  transform: rotate(-10deg);
+}
+50%{
+  transform: rotate(0deg);
+}
+62%{
+  transform: rotate(10deg);
+}
+75%{
+  transform: rotate(0deg);
+}
+87%{
+  transform: rotate(-10deg);
+}
+100%{
+  transform: rotate(0deg);
+}
+}
+.shake {
+  animation: shake 0.8s;
+}
