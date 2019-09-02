@@ -1,4 +1,6 @@
 let dateArray = [];
+
+//获取日期填入dataArray数组
 function getDateArray() {
   let date = new Date(),
       day, dayOfWeek, month, year;
@@ -15,13 +17,13 @@ function getDateArray() {
   }
   for (let i = dayOfWeek - 1, subDay = day; i >= 0; i--) {
     if (subDay === 0) {
-      subDay = judgeLastMonth(month - 1, year);
+      subDay = getDayBefore(month - 1, year);
     }
     dateArray[i] = subDay--;
   }
   for (let i = dayOfWeek, addDay = day + 1; i < 7; i++) {
     if(addDay === 29 || addDay === 30 || addDay === 31 || addDay === 32) {
-      addDay = judgeMonth(addDay, month, year);
+      addDay = getDayNext(addDay, month, year);
     }
     dateArray[i] = addDay++;
   }
@@ -29,8 +31,8 @@ function getDateArray() {
   dateArray[7] = dayOfWeek;
 }
 
-//判断上一个月的最后一天
-function judgeLastMonth (subMonth, year) {
+//判断获取上个月的最后一天
+function getDayBefore (subMonth, year) {
   let subDay;
   if (subMonth === 0 || subMonth === 1 || subMonth === 3 || subMonth === 5 || subMonth === 7 || subMonth === 8 || subMonth === 10) {
     subDay = 31;
@@ -47,8 +49,8 @@ function judgeLastMonth (subMonth, year) {
   return subDay;
 }
 
-//判断是否为本月最后一天
-function judgeMonth (addDay, month, year) {
+//判断是否为本月最后一天并获取下一天
+function getDayNext (addDay, month, year) {
   if((addDay === 29 || addDay === 30) && month === 2) {
     if (year % 4 != 0) {
       addDay = 1;
@@ -71,10 +73,10 @@ Page({
     date5: 0,
     date6: 0,
     date7: 0,
-    dayOfWeek: 1
+    dayOfWeek: 1,
+    Shake: 0
 },
   onLoad:function (options) {
-    //获取日期数组
     getDateArray();
     this.setData({
       date1: dateArray[0],
@@ -86,5 +88,15 @@ Page({
       date7: dateArray[6],
       dayOfWeek: dateArray[7]
     })
-}
+},
+  onShow:function () {
+    this.setData({
+      Shake: 1
+    })
+  },
+  onHide:function () {
+    this.setData({
+      Shake: 0
+    })
+  }
 })
