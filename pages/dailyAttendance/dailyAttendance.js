@@ -94,10 +94,12 @@ Page({
 },
   onLoad:function (options) {
         optionData =  {
-          backgroundColor: "#ffffff",
-          color: ["#37A2DA", "#32C5E9", "#67E0E3"],
+
+          color: ["#37A2DA", "#32C5E9", "#67E0E3",'#FF4500'],
           series: [{
-            fontSize: 5,
+            min: 0,                     // 最小值
+            max: 120,    
+            fontSize: 7,
             name: '业务指标',
             type: 'gauge',
             detail: {
@@ -105,7 +107,7 @@ Page({
               fontSize: 15,
             },
             axisTick: { // 坐标轴小标记
-              length: 5, // 属性length控制线长
+              length: 10, // 属性length控制线长
               lineStyle: { // 属性lineStyle控制线条样式
                 color: 'auto',
                 shadowColor: '#fff', //默认透明
@@ -113,9 +115,9 @@ Page({
               }
             },
             splitLine: { // 分隔线
-              length: 20, // 属性length控制线长
+              length: 10, // 属性length控制线长
               lineStyle: { // 属性lineStyle（详见lineStyle）控制线条样式
-                width: 3,
+                width: 5,
                 color: '#fff',
                 shadowColor: '#fff', //默认透明
                 shadowBlur: 10
@@ -134,15 +136,18 @@ Page({
                 width: 3,
                 shadowBlur: 0,
                 color: [
-                  [0.3, '#67e0e3'],
-                  [0.7, '#13c2c2'],
-                  [1, '#37a2da']
+                  [0.25, '#70CEB0'],
+                  [0.4999, '#55C3D1'],
+                  [0.50, '#ff4500'],
+                  [0.58, '#55C3D1'],
+                  [0.83, '#4CB2D6'],
+                  [1,'#4DB5D6']
                 ],
 
               }
             },
             data: [{
-              value: 40,
+              value: 35,
 
             }]
 
