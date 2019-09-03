@@ -1,3 +1,6 @@
+ page {
+   overflow: hidden
+ }
 text {
   display: block;
   font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
@@ -217,9 +220,11 @@ text {
 }
 ec-canvas {
   position: absolute;
+  
   left: 100rpx;
   width: 500rpx;
   height: 500rpx;
-  top: 0rpx;
+  bottom: -140rpx;
+  overflow: hidden
 }
 
