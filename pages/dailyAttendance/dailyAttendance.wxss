@@ -1,231 +1,153 @@
-.all {
-   overflow: hidden;
-   height:100vh;
- }
 text {
   display: block;
   font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
 }
+
+/*去除滚动条*/
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/*
 .all {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100vh;
-  margin-left: 30rpx;
-}
-
-/*-------日常打卡模块-------*/
-.punch {
-  position: relative;
-  width: 690rpx;
-  height: 143rpx;
-}
-.punch .title {
-  display: flex;
-  justify-content: space-between;
-}
-/*日常打卡文本*/
-.daily-punch {
-  font-size: 29rpx;
-}
-/*奖牌*/
-.medal {
-  margin-top: -10rpx;
-  width: 75rpx;
-  height: 55rpx;
-}
-/*日期模块*/
-.date-form {
-  display: flex;
-  justify-content: space-around;
-  width: 690rpx;
-  position: absolute;
-  bottom: 4rpx;
-}
-.date {
-  width: 32rpx;
-  height: 67rpx;
-  text-align: center;
-}
-.date .week, .date .day {
-  font-size: 24rpx;
-  text-align: center;
-}
-.date .week {
-  color: rgba(190, 195, 203, 1);
-}
-.date .day {
-  line-height: 32rpx;
-  margin-top: 19rpx;
-}
-.is-today {
-  color: white;
-  width: 32rpx;
-  height: 32rpx;
-  background-color: rgba(87, 211, 230, 1);
-  border-radius: 50%;
-}
-
-/*-------运动统计模块-------*/
-.running {
-  position: relative;
-  width: 690rpx;
-  height: 141rpx;
-}
-
-/*日常运动文本*/
-.daily {
-  position: absolute;
-  top: 0rpx;
-}
-.good {
-  font-size: 22rpx;
-  color: rgba(219, 222, 227, 1);
-  letter-spacing: 5rpx;
-}
-.today-sports {
-  font-size: 29rpx;
-  color: black;
-  letter-spacing: 1rpx;
-}
-
-/*公里数显示*/
-.mile {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
+}*/
+/*--------里程展示模块--------*/
 .mileage {
-  font-size: 43rpx;
-  color: rgba(87, 211, 230, 1);
-  font-weight: 500;
-}
-
-
-/*柱状图*/
-.histogram {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: absolute;
-  right: 5rpx;
-  bottom: 0;
-  width: 311rpx;
-}
-.histogram view {
-  width: 29rpx;
-  background-color: rgb(229, 231, 233);
-}
-.hist1, .hist3, .hist4, .hist5, .hist6 {
-  height: 5rpx;
-
-}
-.hist2 {
-  height: 43rpx;
-
-}
-.hist7 {
-    height: 87rpx;
-}
-.histogram .best {
-  background-color: rgb(87, 211, 230);
-}
-
-
-/*-------校友排名模块-------*/
-.rank {
   position: relative;
-  width: 690rpx;
-  height: 192rpx;
+  width: 600rpx;
+  height: 286rpx;
+  margin: 0 auto;
+  margin-top: 6vh;
 }
-/*校友排名文本*/
-.shcoolfriend {
+/*里程图*/
+.mileage > image {
   position: absolute;
+  width: 600rpx;
+  height: 268rpx;
   top: 0;
   left: 0;
 }
-.schoolfriend .text1, .schoolfriend .text2 {
-  font-size: 29rpx;
-  letter-spacing: 3rpx;
+/*今日里程展示*/
+.show {
+  width: 250rpx;
+  height: 174rpx;
+  margin: 0 auto;
+  padding-top: 112rpx;
+  text-align: center;
 }
-.schoolfriend .text2 {
-  color: rgba(199, 204, 210, 1);
+.show .today {
+  font-size: 24rpx;
+  color: #bec3cb;
 }
-.schoolfriend .text3 {
-  display: inline;
-  color: rgba(87, 211, 230, 1);
+.show .mile {
+  font-size: 80rpx;
+  color: #505050;
 }
-/*头像照片*/
-.picture {
+.show .goal {
+  width: 100%;
+  height: 38rpx;
+  border-radius: 10rpx;
+  background-color: #b2b2b2;
+  font-size: 20rpx;
+  color: #fff;
+  line-height: 38rpx;
+}
+/*--------排行榜--------*/
+.rank {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 595rpx;
-  position: absolute;
-  left: 43rpx;
-  bottom: 0;
-  padding: 15rpx;
-}
-.picture image {
-  width: 80rpx;
+  width: 600rpx;
   height: 80rpx;
-  border-radius: 5rpx;
+  margin: 5vh 75rpx 6vh 75rpx;
+  border-radius: 40rpx;
+  box-shadow: 0 0 8rpx 1rpx #ebebeb;
 }
-.picture .last {
-  width: 40rpx;
-  height: 10rpx;
+.rank > image {
+  width: 54rpx;
+  height: 54rpx;
+  margin: 0 18rpx 0 26rpx;
+  background-color: #76a4ca;
+  border-radius: 50%;
+}
+.rank .no1 {
+  flex: 1;
+  font-size: 24rpx;
+  color: #505050;
+}
+.rank .next {
+  width: 12rpx;
+  height: 22rpx;
+  margin-right: 32rpx;
+  background-color: #fff;
+}
+/*--------运动记录模块--------*/
+.sports {
+  width: 750rpx;
+  height: 315rpx;
+}
+.sports .my-sports {
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  color: #505050;
+}
+.sports scroll-view {
+  height: 250rpx;
+  margin-top: 40rpx;
+}
+.sports .model {
+  width: 1200rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+}
+.model-box-one, .model-box-two, .model-box-three {
+  display: inline-block;
+  width: 260rpx;
+  height: 224rpx;
+  margin-right: 28rpx;
+  padding-left: 20rpx;
+  box-shadow: 0 0 10rpx 1rpx #ebebeb;
+  border-radius: 10rpx;
+}
+.model-img {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 0 50rpx 0;
+}
+.explain {
+  height: 24rpx;
+  font-size: 24rpx;
+  letter-spacing: 4rpx;
+  color: #bec3cb;
+}
+.kilometre {
+  margin-top: 15rpx;
+  height: 40rpx;
+  font-size: 40rpx;
+  color: #505050;
+}
+.kilometre .km {
+  display: inline;
+  font-size: 24rpx;
 }
 
-/*-------我的进度模块-------*/
-.schedule {
-  position: relative;
-  width: 690rpx;
-  height: 385rpx;
+/*--------底部提示--------*/
+.bottom {
+  width: 750rpx;
+  height: 54rpx;
+  margin-top: 8vh;
+  text-align: center;
 }
-.schedule-text {
-  font-size: 29rpx;
-  letter-spacing: 3rpx;
-  position: relative;
+.bottom > image {
+  width: 20rpx;
+  height: 26rpx;
 }
-
-/*奖牌抖动*/
-@keyframes shake {
-  12%{
-    transform: rotate(10deg);
-  }
-  25%{
-    transform: rotate(0deg);
-  }
-  37%{
-    transform: rotate(-10deg);
-  }
-  50%{
-    transform: rotate(0deg);
-  }
-  62%{
-    transform: rotate(10deg);
-  }
-  75%{
-    transform: rotate(0deg);
-  }
-  87%{
-    transform: rotate(-10deg);
-  }
-  100%{
-    transform: rotate(0deg);
-  }
+.remind {
+  font-size: 20rpx;
+  color: #e0e2e4;
 }
-.shake {
-  animation: shake 0.8s;
-}
-ec-canvas {
-  position: absolute;
-  
-  left: 100rpx;
-  width: 500rpx;
-  height: 500rpx;
-  bottom: -140rpx;
-  overflow: hidden
-}
-
