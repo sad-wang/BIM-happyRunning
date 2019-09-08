@@ -1,80 +1,52 @@
 <!--pages/dailyAttendance/dailyAttendance.wxml-->
-<view class="all">
-  <!--日常打卡模块-->
-  <view class="punch">
-    <view class="title">
-      <view class="daily-punch">日常打卡</view>
-      <navigator url="./title/title">
-        <image class="medal {{Shake==1?'shake':''}}" src="../../images/dailyAttendanceImage/medal.png" />
-    </navigator>
-    </view>
-    <view class="date-form">
-      <view class="date">
-        <view class="week">一</view>
-        <view class="day {{dayOfWeek==1?'is-today':''}}">{{date1}}</view>
-      </view>
-      <view class="date">
-        <view class="week">二</view>
-        <view class="day {{dayOfWeek==2?'is-today':''}}">{{date2}}</view>
-      </view>
-      <view class="date">
-        <view class="week">三</view>
-        <view class="day {{dayOfWeek==3?'is-today':''}}">{{date3}}</view>
-      </view>
-      <view class="date">
-        <view class="week">四</view>
-        <view class="day {{dayOfWeek==4?'is-today':''}}">{{date4}}</view>
-      </view>
-      <view class="date">
-        <view class="week">五</view>
-        <view class="day {{dayOfWeek==5?'is-today':''}}">{{date5}}</view>
-      </view>
-      <view class="date">
-        <view class="week">六</view>
-        <view class="day {{dayOfWeek==6?'is-today':''}}">{{date6}}</view>
-      </view>
-      <view class="date">
-        <view class="week">日</view>
-        <view class="day {{dayOfWeek==7?'is-today':''}}">{{date7}}</view>
-      </view>
+
+
+  <!--里程模块-->
+  <view class="mileage">
+    <image src="../../images/dailyAttendanceImage/mile.png" />
+    <view class="show">
+      <text class="today">今日里程</text>
+      <text class="mile">8.07</text>
+      <text class="goal">恭喜你! 今日运动已达标</text>
     </view>
   </view>
-<!--每周公里数统计模块-->
-  <view class="running">
-    <view class="today-sports">今日运动里程</view>
-    <view class="mile">
-      <text class="mileage">1.3公里\n</text>
-      <text class="good">本周最佳</text>
+
+  <!--转到排行榜模块-->
+  <navigator url="./rank/rank">
+    <view class="rank">
+      <image src="../../images/dailyAttendanceImage/protrait.png" />
+      <text class="no1">张晓松夺得今日排行榜冠军</text>
+      <image src="../../images/nextIcon.png" class="next" />
     </view>
-    <view class="histogram">
-      <view class="hist1"></view>
-      <view class="hist2"></view>
-      <view class="hist3"></view>
-      <view class="hist4"></view>
-      <view class="hist5"></view>
-      <view class="hist6"></view>
-      <view class="best hist7"></view>
-    </view>
+  </navigator>
+
+  <!--运动记录模块-->
+  <view class="sports">
+    <text class="my-sports">我的运动</text>
+    <scroll-view scroll-x>
+      <view class="model">
+        <view class="model-box-one">
+          <image src="../../images/dailyAttendanceImage/mileage.png" class="model-img" />
+          <text class="explain">本学期累计里程</text>
+          <text class="kilometre">56.73<text class="km">KM</text></text>
+        </view>
+        <view class="model-box-two">
+          <image src="../../images/dailyAttendanceImage/foot.png" class="model-img" />
+          <text class="explain">本学期最高纪录</text>
+          <text class="kilometre">5.4<text class="km">KM</text></text>
+        </view>
+        <view class="model-box-three">
+          <image src="../../images/dailyAttendanceImage/credit.png" class="model-img" />
+          <text class="explain">本学期累计成绩</text>
+          <text class="kilometre">6.2<text class="km">KM</text></text>
+        </view>
+      </view>
+    </scroll-view>
   </view>
-  <view class="rank">
-  <!--校友排名-->
-    <view class="schoolfriend">
-      <text class="text1">校友排名\n</text>
-      <text class="text2">第<text class="text3">3</text>名</text>
-    </view>
-    <navigator url="./rank/rank">
-    <view class="picture">
-      <image src="../../images/dailyAttendanceImage/pct1.png" />
-      <image src="../../images/dailyAttendanceImage/pct2.png" />
-      <image src="../../images/dailyAttendanceImage/pct3.png" />
-      <image src="../../images/dailyAttendanceImage/pct4.png" />
-      <image src="../../images/dailyAttendanceImage/pct5.png" />
-      <image src="../../images/dailyAttendanceImage/more.png" class="last"/>
-    </view>
-    </navigator>
+
+  <!--底部提示-->
+  <view class="bottom">
+    <image src="../../images/dailyAttendanceImage/run.png" />
+    <text class="remind">想要得到更多的尊重，请先控制好自己的体重。</text>
   </view>
-  <view class="schedule">
-    <view class="schedule-text">我的进度</view>
-    <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
-  </view>
-</view>
+
