@@ -25,10 +25,8 @@ text {
   margin-top: 6vh;
 }
 /*里程图*/
-.mileage > image {
+.mileage > canvas {
   position: absolute;
-  width: 600rpx;
-  height: 268rpx;
   top: 0;
   left: 0;
 }
@@ -56,6 +54,10 @@ text {
   font-size: 20rpx;
   color: #fff;
   line-height: 38rpx;
+}
+.hidden {
+  opacity: 0;
+  transition: 0.3s;
 }
 /*--------排行榜--------*/
 .rank {
@@ -101,7 +103,7 @@ text {
   margin-top: 40rpx;
 }
 .sports .model {
-  width: 1200rpx;
+  width: 914rpx;
   margin-top: 10rpx;
   margin-left: 30rpx;
 }
@@ -140,7 +142,7 @@ text {
 .bottom {
   width: 750rpx;
   height: 54rpx;
-  margin-top: 8vh;
+  margin-top: 10vh;
   text-align: center;
 }
 .bottom > image {
