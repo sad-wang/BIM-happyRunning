@@ -2,6 +2,7 @@
 const app = getApp()
 Page({
   data: {
+    Shake: 0,
   },
   navTo:function(e) {
     wx.navigateTo({
