@@ -49,5 +49,10 @@
                 <text class="title">我的课堂</text>
                 <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
         </view>
+        <view class="section my-mooc" bindtap="navTo"  data-url="./rank/rank">
+            <image class="mooc-icon" src="../../images/moocIcon.png" mode="cover"></image>
+            <text class="title">test</text>
+            <image class="next-icon" src="../../images/nextIcon.png" mode="cover"></image>
+        </view>
     </view>
 </view>
