@@ -1,77 +1,10 @@
-.panel{
-    position: relative;
-    height: 120px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.panel::after{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    line-height: 10px;
-    display: block;
-    text-align: center;
-    background-image: radial-gradient(10px at 5px 0px, #e7eaeb 5px, white 5px);
-    bottom: 0;
-    left: calc(100vw/2 + 100px);
-}
-.panel::before{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    line-height: 10px;
-    display: block;
-    text-align: center;
-    background-image: radial-gradient(10px at 5px 0px, #2DBABD 5px, white 5px);
-    bottom: 0;
-    right: calc(100vw/2 + 100px);
-}
-.semicircle{
-    width: 200px;
-    height: 100px;
-    margin:0 auto;
-    position: relative;
-    border-radius: 200px 200px 0 0;
-    border-bottom: 10px white solid;
-    background: white;
-    bottom: -10px;
-}
-.semicircle:after{
-    position: absolute;
-    top: -10px;
-    bottom: 0px;
-    left: -10px;
-    right: -10px;
-    background: linear-gradient(to right,#3db7c7, #00bd8d);
-    content: '';
-    z-index: -1;
-    border-radius: 200px 200px 0 0;
-    transform-origin: bottom center;
-    animation: rotate 0.8s linear;
-    transform: rotate(-30deg);
-}
-.semicircle:before{
-    position: absolute;
-    top: -10px;
-    bottom: 0px;
-    left: -10px;
-    right: -10px;
-    background: #e7eaeb;
-    content: '';
-    z-index: -1;
-    border-radius: 200px 200px 0 0;
-}
-
+.panel{position: relative;height: 120px;width: 100%;display: flex;justify-content: center;align-items: center;overflow: hidden;}
+.panel::after{content: '';position: absolute;width: 10px;height: 10px;line-height: 10px;display: block;text-align: center;background-image: radial-gradient(10px at 5px 0px, #e7eaeb 5px, white 5px);bottom: 0;left: calc(100vw/2 + 100px);}
+.panel::before{content: '';position: absolute;width: 10px;height: 10px;line-height: 10px;display: block;text-align: center;background-image: radial-gradient(10px at 5px 0px, #2DBABD 5px, white 5px);bottom: 0;right: calc(100vw/2 + 100px);}
+.semicircle{width: 200px;height: 100px;margin:0 auto;position: relative;border-radius: 200px 200px 0 0;border-bottom: 10px white solid;background: white;bottom: -10px;}
+.semicircle:after{position: absolute;top: -10px;bottom: 0px;left: -10px;right: -10px;background: linear-gradient(to right,#3db7c7, #00bd8d);content: '';z-index: -1;border-radius: 200px 200px 0 0;transform-origin: bottom center;animation: rotate 0.8s linear;transform: rotate(-30deg);}
+.semicircle:before{position: absolute;top: -10px;bottom: 0px;left: -10px;right: -10px;background: #e7eaeb;content: '';z-index: -1;border-radius: 200px 200px 0 0;}
 @keyframes rotate{
-    from {
-        transform: rotate(-180deg);
-    }
-    to {
-        transform: rotate(-30deg);
-    }
+    from {transform: rotate(-180deg);}
+    to {transform: rotate(-30deg);}
 }
