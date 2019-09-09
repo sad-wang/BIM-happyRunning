@@ -11,4 +11,15 @@ Page({
   onLoad: function () {
 
   },
+  onShow:function () {
+    this.setData({
+      Shake: 0
+    })
+    let interval = setInterval(()=> {
+      this.setData({
+        Shake: 1
+      })
+      clearInterval(interval)
+    },100)
+  },
 })

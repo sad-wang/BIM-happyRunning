@@ -7,7 +7,9 @@
                 <view class="info-name" >王太难</view>
                 <view class="info-num">201607405</view>
             </view>
-            <view class="identification">学生</view>
+            <navigator url="./title/title">
+                <image class="identification {{Shake==1?'shake':''}}" src="../../images/dailyAttendanceImage/medal.png" />
+            </navigator>
         </view>
     </view>
     <view class="sections">

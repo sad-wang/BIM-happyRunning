@@ -6,11 +6,11 @@
     "pages/mooc/moocDetails/moocDetails",
     "pages/personalCenter/personalCenter",
     "pages/personalCenter/myScore/myScore",
-    "pages/dailyAttendance/title/title",
+    "pages/personalCenter/title/title",
     "pages/dailyAttendance/rank/rank",
     "pages/mooc/moocLists/moocLists",
     "pages/personalCenter/myPoints/myPoints",
-    "pages/dailyAttendance/title/pointTricks/pointTricks"
+    "pages/personalCenter/title/pointTricks/pointTricks"
   ],
   "window": {
     "backgroundTextStyle": "light",
