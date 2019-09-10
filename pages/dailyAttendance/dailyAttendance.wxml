@@ -6,7 +6,7 @@
     <canvas style='width:600rpx; height:278rpx'  disable-scroll='true' canvas-id="scheduleCanvas"></canvas>
     <view class="show">
       <text class="today">今日里程</text>
-      <text class="mile">8.07</text>
+      <text class="mile">{{mileData}}</text>
       <text class="goal {{hidden==1?'hidden':''}}">恭喜你! 今日运动已达标</text>
     </view>
   </view>
