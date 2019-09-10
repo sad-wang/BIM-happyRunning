@@ -3,11 +3,11 @@
 
   <!--里程模块-->
   <view class="mileage">
-    <image src="../../images/dailyAttendanceImage/mile.png" />
+    <canvas style='width:600rpx; height:278rpx'  disable-scroll='true' canvas-id="scheduleCanvas"></canvas>
     <view class="show">
       <text class="today">今日里程</text>
-      <text class="mile">8.07</text>
-      <text class="goal">恭喜你! 今日运动已达标</text>
+      <text class="mile">{{mileData}}</text>
+      <text class="goal {{hidden==1?'hidden':''}}">恭喜你! 今日运动已达标</text>
     </view>
   </view>
 
@@ -38,7 +38,7 @@
         <view class="model-box-three">
           <image src="../../images/dailyAttendanceImage/credit.png" class="model-img" />
           <text class="explain">本学期累计成绩</text>
-          <text class="kilometre">6.2<text class="km">KM</text></text>
+          <text class="kilometre">6.2<text class="km">分</text></text>
         </view>
       </view>
     </scroll-view>
