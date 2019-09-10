@@ -147,9 +147,10 @@ text {
 
 /*--------底部提示--------*/
 .bottom {
+  position: absolute;
+  bottom: 5vh;
   width: 750rpx;
   height: 54rpx;
-  margin-top: 10vh;
   text-align: center;
 }
 .bottom > image {
