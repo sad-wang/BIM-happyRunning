@@ -98,23 +98,29 @@ text {
   font-size: 32rpx;
   color: #505050;
 }
-.sports scroll-view {
+.sports .model-box {
+  width: 750rpx;
   height: 250rpx;
   margin-top: 40rpx;
 }
 .sports .model {
-  width: 914rpx;
-  margin-top: 10rpx;
-  margin-left: 30rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .model-box-one, .model-box-two, .model-box-three {
-  display: inline-block;
+  box-sizing: border-box;
   width: 260rpx;
   height: 224rpx;
+  margin-left: 10rpx;
   margin-right: 28rpx;
   padding-left: 20rpx;
-  box-shadow: 0 0 10rpx 1rpx #ebebeb;
   border-radius: 10rpx;
+  box-shadow: 0 0 10rpx 1rpx #ebebeb;
+}
+.model-box-one {
+  margin-left: 30rpx;
 }
 .model-img {
   width: 50rpx;
@@ -122,6 +128,7 @@ text {
   margin: 20rpx 0 50rpx 0;
 }
 .explain {
+  width: 260rpx;
   height: 24rpx;
   font-size: 24rpx;
   letter-spacing: 4rpx;

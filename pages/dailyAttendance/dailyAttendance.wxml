@@ -22,8 +22,8 @@
   <!--运动记录模块-->
   <view class="sports">
     <text class="my-sports">我的运动</text>
-    <scroll-view scroll-x>
-      <view class="model">
+    <scroll-view scroll-x enable-flex class="model-box">
+      <class class="model">
         <view class="model-box-one">
           <image src="../../images/dailyAttendanceImage/mileage.png" class="model-img" />
           <text class="explain">本学期累计里程</text>
@@ -39,7 +39,7 @@
           <text class="explain">本学期累计成绩</text>
           <text class="kilometre">6.2<text class="km">分</text></text>
         </view>
-      </view>
+      </class>
     </scroll-view>
   </view>
 
