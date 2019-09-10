@@ -47,7 +47,6 @@ onReady: function(e) {
   ctx.setLineWidth(20 * rpx);
   ctx.setFillStyle("rgba(0, 0, 0, 0)");
   ctx.setLineCap('round');
-
   this.writeBackground();
   scheduleFor = setInterval(this.writeSchedule, 16);
 },
