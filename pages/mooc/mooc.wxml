@@ -3,7 +3,7 @@
     <view class="search">
         <view class="search-box">
             <image class="icon" src="../../images/search.png"></image>
-            <input class="content" type="text" value="搜索..."/>
+            <input class="content {{searchBoxState?'on':''}}" type="text" value="{{searchBoxState?'':'搜索...'}}" bindfocus="changeSearchBoxState" bindconfirm="confirmSearch"/>
         </view>
     </view>
     <scroll-view scroll-x enable-flex class="category" >
