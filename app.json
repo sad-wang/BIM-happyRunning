@@ -10,7 +10,6 @@
     "pages/dailyAttendance/rank/rank",
     "pages/mooc/moocLists/moocLists",
     "pages/personalCenter/myPoints/myPoints",
-    "pages/personalCenter/rank/rank",
     "pages/personalCenter/title/pointTricks/pointTricks"
   ],
   "window": {
