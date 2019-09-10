@@ -3,8 +3,7 @@
 
   <!--里程模块-->
   <view class="mileage">
-    <canvas style='width:600rpx; height:280rpx'  disable-scroll='true' canvas-id="scheduleCanvas"></canvas>
-    <view class="show">
+    <canvas style='width:600rpx; height:280rpx'  disable-scroll='true' canvas-id="scheduleCanvas"></canvas>    <view class="show">
       <text class="today">今日里程</text>
       <text class="mile">{{mileData}}</text>
       <text class="goal {{hidden==1?'hidden':''}}">恭喜你! 今日运动已达标</text>
