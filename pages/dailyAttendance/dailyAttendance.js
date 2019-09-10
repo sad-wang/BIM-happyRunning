@@ -106,6 +106,9 @@ Page({
     this.drawArc();
     scheduleFor = setInterval(this.drawSchedule, 16);
 
+
+  },
+  onShow:function () {
     //三秒后隐藏提示框
     var that = this;
     setTimeout(function() {
@@ -113,7 +116,5 @@ Page({
         hidden: 1
       })
     }, 3000);
-  },
-  onShow:function () {
   }
 })
