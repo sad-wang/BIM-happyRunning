@@ -1,0 +1,163 @@
+text {
+  display: block;
+  font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+/*去除滚动条*/
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/*
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}*/
+/*--------里程展示模块--------*/
+.mileage {
+  position: relative;
+  width: 600rpx;
+  height: 286rpx;
+  margin: 0 auto;
+  margin-top: 6vh;
+}
+/*里程图*/
+.mileage > canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*今日里程展示*/
+.show {
+  width: 250rpx;
+  height: 174rpx;
+  margin: 0 auto;
+  padding-top: 112rpx;
+  text-align: center;
+}
+.show .today {
+  font-size: 24rpx;
+  color: #bec3cb;
+}
+.show .mile {
+  font-size: 80rpx;
+  color: #505050;
+}
+.show .goal {
+  width: 100%;
+  height: 38rpx;
+  border-radius: 10rpx;
+  background-color: #b2b2b2;
+  font-size: 20rpx;
+  color: #fff;
+  line-height: 38rpx;
+}
+.hidden {
+  opacity: 0;
+  transition: 0.3s;
+}
+/*--------排行榜--------*/
+.rank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600rpx;
+  height: 80rpx;
+  margin: 5vh 75rpx 6vh 75rpx;
+  border-radius: 40rpx;
+  box-shadow: 0 0 8rpx 1rpx #ebebeb;
+}
+.rank > image {
+  width: 54rpx;
+  height: 54rpx;
+  margin: 0 18rpx 0 26rpx;
+  background-color: #76a4ca;
+  border-radius: 50%;
+}
+.rank .no1 {
+  flex: 1;
+  font-size: 24rpx;
+  color: #505050;
+}
+.rank .next {
+  width: 12rpx;
+  height: 22rpx;
+  margin-right: 32rpx;
+  background-color: #fff;
+}
+/*--------运动记录模块--------*/
+.sports {
+  width: 750rpx;
+  height: 315rpx;
+}
+.sports .my-sports {
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  color: #505050;
+}
+.sports .model-box {
+  width: 750rpx;
+  height: 250rpx;
+  margin-top: 40rpx;
+}
+.sports .model {
+  height: 250rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.model-box-one, .model-box-two, .model-box-three {
+  box-sizing: border-box;
+  width: 260rpx;
+  height: 224rpx;
+  margin-left: 10rpx;
+  margin-right: 28rpx;
+  padding-left: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx 1rpx #ebebeb;
+}
+.model-box-one {
+  margin-left: 30rpx;
+}
+.model-img {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 0 50rpx 0;
+}
+.explain {
+  width: 260rpx;
+  height: 24rpx;
+  font-size: 24rpx;
+  letter-spacing: 4rpx;
+  color: #bec3cb;
+}
+.kilometre {
+  margin-top: 15rpx;
+  height: 40rpx;
+  font-size: 40rpx;
+  color: #505050;
+}
+.kilometre .km {
+  display: inline;
+  font-size: 24rpx;
+}
+
+/*--------底部提示--------*/
+.bottom {
+  position: absolute;
+  bottom: 5vh;
+  width: 750rpx;
+  height: 54rpx;
+  text-align: center;
+}
+.bottom > image {
+  width: 20rpx;
+  height: 26rpx;
+}
+.remind {
+  font-size: 20rpx;
+  color: #e0e2e4;
+}
