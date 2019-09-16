@@ -6,3 +6,16 @@
     margin-left: 2px;
     font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
 }
+.avatar{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar-img{
+    width: 64px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
