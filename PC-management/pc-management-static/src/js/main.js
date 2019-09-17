@@ -1,5 +1,5 @@
 new Vue({
-    el: '#side',
+    el: '#app',
     data: {
         sideLists:[
             {
@@ -37,4 +37,7 @@ new Vue({
     },
     method:{
     }
+
 })
+
+
