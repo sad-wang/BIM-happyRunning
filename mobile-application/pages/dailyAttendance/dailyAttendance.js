@@ -1,3 +1,34 @@
+
+let a = 1
+wx.getLocation({
+  type: 'wgs84',
+  success(res) {
+    console.log(res.latitude)
+    console.log(res.longitude)
+    console.log(res.speed)
+    console.log(res.accuracy)
+  }
+})
+wx.startLocationUpdateBackground({
+  success(res) {
+    console.log("success")
+    setInterval(
+      res => {
+        wx.getLocation({
+          type: 'wgs84',
+          success(res) {
+            console.log("第" + a + "次")
+            console.log("纬度:" + res.latitude + "经度" + res.longitude)
+          },
+          complete(res) {
+            console.log(res)
+          }
+        })
+        ++a
+      }
+      , 1000)
+  }
+})
 let rpx, speed, scheduleFor,
     ctx, lineargradient;
 speed = 1;

@@ -43,5 +43,16 @@
       }
     ]
   },
+      "requiredBackgroundModes": [
+        "location"
+      ],
+      "permission": {
+        "scope.userLocation": {
+          "desc": "需要获取位置"
+        },
+        "scope.userLocationBackground": {
+          "desc": "需要后台定位"
+        }
+      },
   "sitemapLocation": "sitemap.json"
 }
