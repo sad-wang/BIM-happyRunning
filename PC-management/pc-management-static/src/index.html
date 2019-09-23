@@ -17,7 +17,7 @@
                 <div class="layui-layout-left logo-name">课外阳光锻炼系统</div>
                 <!-- 头部区域（可配合layui已有的水平导航） -->
                 <ul class="layui-nav layui-layout-right">
-                    <li class="layui-nav-item"><a href="">退出</a></li>
+                    <li class="layui-nav-item child-style"><a href="">退出</a></li>
                 </ul>
             </div>
 
@@ -25,13 +25,13 @@
                 <div class="layui-side-scroll">
                     <div class="avatar">
                         <img src="http://www.doocr.com/modules/core/client/img/header/avatar-icon.svg" class="avatar-img" alt="">
-                        <span>王sad</span>
+                        <span class="title-style">王sad</span>
                     </div>
                     <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                    <ul class="layui-nav layui-nav-tree"  lay-filter="test" v-for="item in sideLists" >
+                    <ul class="layui-nav layui-nav-tree "  lay-filter="test" v-for="item in sideLists" >
                         <li class="layui-nav-item" v-bind:class="{ 'layui-nav-itemed' : item.status }" v-on:click ="item.status=!item.status">
-                            <a class="" href="javascript:;">{{item.name}}</a>
-                            <dl class="layui-nav-child" v-for="list in item.lists">
+                            <a class="title-style" href="javascript:;">{{item.name}}</a>
+                            <dl class="layui-nav-child child-style" v-for="list in item.lists">
                                 <dd><a @click.stop="">{{list}}</a></dd>
                             </dl>
                         </li>
@@ -43,7 +43,107 @@
 
             <div class="layui-body">
                 <!-- 内容主体区域 -->
-                <div style="padding: 15px;">内容主体区域</div>
+                <div style="padding: 15px;">
+                    <div class="main-content">
+                        <span class="layui-badge-dot layui-bg-black" style="margin-bottom: 2px"></span>
+                        <span class="title-content">日常得分标准设置:</span>
+                     </div>
+                    <form class="layui-form"> <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">积分设置</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" lay-skin="switch">
+                            </div>
+                        </div>
+                        <div class="layui-form-item" style="margin-left: 40px">
+                            <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                            <div class="layui-input-inline" style="width: 80px">
+                                <input type="text" name="" placeholder="请输入" autocomplete="off" class="layui-input input-point" style="display: block">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">辅助文字</div>
+                        </div>
+                        <div class="layui-form-item" style="margin-left: 40px">
+                            <label class="layui-form-label" style="text-align: left;font-size: 13px">积分及格线：</label>
+                            <div class="layui-input-block" style="width: 80px">
+                                <input type="text" name="" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">学分设置</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" checked lay-skin="switch">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                        <!-- 更多表单结构排版请移步文档左侧【页面元素-表单】一项阅览 -->
+                    </form>
+                    <div class="main-content">
+                        <span class="layui-badge-dot layui-bg-black" style="margin-bottom: 2px"></span>
+                        <span class="title-content">日常得分规则设置:</span>
+                    </div>
+                    <form class="layui-form"> <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">输入框</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">下拉选择框</label>
+                            <div class="layui-input-block">
+                                <select name="interest" lay-filter="aihao">
+                                    <option value="0">写作</option>
+                                    <option value="1">阅读</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">复选框</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" name="like[write]" title="写作">
+                                <input type="checkbox" name="like[read]" title="阅读">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">开关关</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" lay-skin="switch">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">开关开</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" checked lay-skin="switch">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">单选框</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="sex" value="0" title="男">
+                                <input type="radio" name="sex" value="1" title="女" checked>
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">请填写描述</label>
+                            <div class="layui-input-block">
+                                <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="*">立即提交</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                        <!-- 更多表单结构排版请移步文档左侧【页面元素-表单】一项阅览 -->
+                    </form>
+                </div>
 <!--                <router-view></router-view>-->
             </div>
 

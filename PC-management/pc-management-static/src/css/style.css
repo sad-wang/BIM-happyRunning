@@ -5,6 +5,7 @@
     color: white;
     margin-left: 2px;
     font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
 }
 .avatar{
     width: 200px;
@@ -18,4 +19,26 @@
     width: 64px;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+.child-style{
+    letter-spacing: 2px;
+}
+.title-style{
+    letter-spacing: 1px;
+}
+.main-content{
+    height: 18px;
+    margin-bottom: 15px;
+}
+.title-content{
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0 10px;
+}
+.input-point:after{
+    content: '分';
+    font-size: 12px;
+    display: block;
+    width: 40px;
+    height: 40px;
 }

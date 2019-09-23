@@ -1,3 +1,15 @@
+layui.use('form', function(){
+    var form = layui.form;
+
+    //各种基于事件的操作，下面会有进一步介绍
+});
+layui.use('flow', function(){
+    var flow = layui.flow;
+    //信息流
+    flow.load(options);
+    //图片懒加载
+    flow.lazyimg(options);
+});
 new Vue({
     el: '#app',
     data: {
@@ -7,29 +19,36 @@ new Vue({
                 status:false
             },
             {
-                name:'系统管理',
+                name:'得分管理',
                 lists:[
-                    '积分/等级设置',
-                    '设置活动加分明细',
-                    '设置比赛加分明细',
-                    '上传线上课堂视频',
+                    '日常得分',
+                    '奖项得分',
+                    '段位管理',
                 ],
                 status:true
             },
             {
-                name:'权限管理',
+                name:'学生管理',
                 lists:[
-                    '用户管理',
-                    '角色管理',
+                    '成绩管理',
+                    '加分管理',
                 ],
                 status:false
             },
             {
-                name:'人员管理',
+                name:'系统管理',
                 lists:[
-                    '学生课外成绩管理',
-                    '教师课时管理',
-                    '学生锻炼情况通知',
+                    '角色管理',
+                    '用户管理',
+                    '学期设置',
+                ],
+                status:false
+            },
+            {
+                name:'定时任务',
+                lists:[
+                    '任务提醒',
+                    '任务执行日志',
                 ],
                 status:false
             }
