@@ -9,8 +9,8 @@ new Vue({
     el: '#app',
     data: {
         diarySwitch:{
-            point:'false',
-            score:'false',
+            point:true,
+            score:true,
         },
         sideLists:[
             {
@@ -54,18 +54,7 @@ new Vue({
         ],
     },
     methods: {
-        point: function () {
-            let that = this
-            form.on('switch(pointSetting)', function (data) {
-                that.diarySwitch.point = !that.diarySwitch.point
-            });
-        },
-        score: function () {
-            let that = this
-            form.on('switch(scoreSetting)', function (data) {
-                that.diarySwitch.score = !that.diarySwitch.score
-            });
-        },
+
     }
 
 })
