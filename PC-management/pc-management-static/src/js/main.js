@@ -1,18 +1,17 @@
+let form
 layui.use('form', function(){
-    var form = layui.form;
+    form = layui.form;
 
     //各种基于事件的操作，下面会有进一步介绍
 });
-layui.use('flow', function(){
-    var flow = layui.flow;
-    //信息流
-    flow.load(options);
-    //图片懒加载
-    flow.lazyimg(options);
-});
+
 new Vue({
     el: '#app',
     data: {
+        diarySwitch:{
+            point:'false',
+            score:'false',
+        },
         sideLists:[
             {
                 name:'首页',
@@ -54,7 +53,19 @@ new Vue({
             }
         ],
     },
-    method:{
+    methods: {
+        point: function () {
+            let that = this
+            form.on('switch(pointSetting)', function (data) {
+                that.diarySwitch.point = !that.diarySwitch.point
+            });
+        },
+        score: function () {
+            let that = this
+            form.on('switch(scoreSetting)', function (data) {
+                that.diarySwitch.score = !that.diarySwitch.score
+            });
+        },
     }
 
 })

@@ -43,8 +43,7 @@
 
             <div class="layui-body">
                 <!-- 内容主体区域 -->
-<<<<<<< HEAD
-                <div style="padding: 15px;">
+                <div style="padding: 30px;">
                     <div class="main-content">
                         <span class="layui-badge-dot layui-bg-black" style="margin-bottom: 2px"></span>
                         <span class="title-content">日常得分标准设置:</span>
@@ -52,27 +51,46 @@
                     <form class="layui-form"> <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
                         <div class="layui-form-item">
                             <label class="layui-form-label">积分设置</label>
-                            <div class="layui-input-block">
-                                <input type="checkbox" lay-skin="switch">
+                            <div class="layui-input-block" v-on:click="point">
+                                <input type="checkbox" lay-skin="switch" lay-filter="pointSetting">
                             </div>
                         </div>
-                        <div class="layui-form-item" style="margin-left: 40px">
-                            <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
-                            <div class="layui-input-inline" style="width: 80px">
-                                <input type="text" name="" placeholder="请输入" autocomplete="off" class="layui-input input-point" style="display: block">
+                        <div v-show="diarySwitch.point===false" >
+                            <div class="layui-form-item" style="margin-left: 60px">
+                                <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                                <div class="layui-input-inline" style="width: 45px">
+                                    <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                                </div>
+                                <div class="layui-form-mid ">分</div>
                             </div>
-                            <div class="layui-form-mid layui-word-aux">辅助文字</div>
-                        </div>
-                        <div class="layui-form-item" style="margin-left: 40px">
-                            <label class="layui-form-label" style="text-align: left;font-size: 13px">积分及格线：</label>
-                            <div class="layui-input-block" style="width: 80px">
-                                <input type="text" name="" placeholder="请输入" autocomplete="off" class="layui-input">
+                            <div class="layui-form-item" style="margin-left: 60px">
+                                <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                                <div class="layui-input-inline" style="width: 45px">
+                                    <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                                </div>
+                                <div class="layui-form-mid ">分</div>
                             </div>
                         </div>
                         <div class="layui-form-item">
                             <label class="layui-form-label">学分设置</label>
-                            <div class="layui-input-block">
-                                <input type="checkbox" checked lay-skin="switch">
+                            <div class="layui-input-block" v-on:click="score">
+                                <input type="checkbox" lay-skin="switch" lay-filter="scoreSetting">
+                            </div>
+                        </div>
+                        <div v-show="diarySwitch.score===false">
+                            <div class="layui-form-item" style="margin-left: 60px">
+                                <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                                <div class="layui-input-inline" style="width: 45px">
+                                    <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                                </div>
+                                <div class="layui-form-mid ">分</div>
+                            </div>
+                            <div class="layui-form-item" style="margin-left: 60px">
+                                <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                                <div class="layui-input-inline" style="width: 45px">
+                                    <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                                </div>
+                                <div class="layui-form-mid ">分</div>
                             </div>
                         </div>
 
