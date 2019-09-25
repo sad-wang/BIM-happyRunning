@@ -10,7 +10,7 @@
 </head>
 <body class="layui-layout-body"  >
 <div id="app">
-    <div class="layui-layout layui-layout-admin">
+    <div class="layui-layout layui-layout-admin" >
         <div class="layui-header">
             <img class="layui-logo logo" src="static/logo.png" style="width: 318px;
             height: 50px;">
@@ -41,7 +41,7 @@
             <!--                <router-link to="/bar">Go to Bar</router-link>-->
         </div>
 
-        <div class="layui-body">
+        <div class="layui-body" style="bottom: 0px;">
             <!-- 内容主体区域 -->
             <div style="padding: 30px;">
                 <div class="main-content">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="layui-form-item" style="margin: 20px 0 40px 0">
+                    <div class="layui-form-item" style="margin: 10px 0 30px 0">
                         <div class="layui-input-block">
                             <button class="layui-btn" lay-submit lay-filter="*">保存</button>
                             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
@@ -95,28 +95,23 @@
                     </div>
                     <!-- 更多表单结构排版请移步文档左侧【页面元素-表单】一项阅览 -->
                 </form>
-                <div class="main-content">
+                <div class="main-content" style="margin-bottom: 30px">
                     <span class="layui-badge-dot layui-bg-black" style="margin-bottom: 2px"></span>
                     <span class="title-content">日常得分规则设置:</span>
                 </div>
-                <table class="layui-table" lay-data="{width: 892, height:330, url:'http://rap2api.taobao.org/app/mock/232172/score/diary/rules', page:true, id:'idTest'}" lay-filter="demo">
-                    <thead>
-                    <tr>
-                        <th lay-data="{type:'checkbox', fixed: 'left'}"></th>
-                        <th lay-data="{field:'id', width:80, sort: true, fixed: true}">ID</th>
-                        <th lay-data="{field:'username', width:80}">用户名</th>
-                        <th lay-data="{field:'sex', width:80, sort: true}">性别</th>
-                        <th lay-data="{field:'city', width:80}">城市</th>
-                        <th lay-data="{field:'sign', width:160}">签名</th>
-                        <th lay-data="{field:'experience', width:80, sort: true}">积分</th>
-                        <th lay-data="{field:'classify', width:80}">职业</th>
-                        <th lay-data="{field:'wealth', width:135, sort: true}">财富</th>
-                        <th lay-data="{field:'score', width:80, sort: true, fixed: 'right'}">评分</th>
-                        <th lay-data="{fixed: 'right', width:178, align:'center', toolbar: '#barDemo'}"></th>
-                    </tr>
-                    </thead>
-                </table>
-
+                <div style="margin-left: 30px" >
+                    <table class="layui-table" lay-data="{width: 892, height:330, url:'http://rap2api.taobao.org/app/mock/232172/score/diary/rules', page:true, id:'idTest'}" lay-filter="demo">
+                        <thead>
+                        <tr>
+                            <th lay-data="{type:'checkbox', fixed: 'left', width:70}"></th>
+                            <th lay-data="{field:'id', width:200, sort: true, fixed: true}">步数</th>
+                            <th lay-data="{field:'username', width:200}">积分</th>
+                            <th lay-data="{field:'sex', width:200, sort: true}">学分</th>
+                            <th lay-data="{fixed: 'right', width:200, align:'center', toolbar: '#barDemo'}"></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
         </div>
         </div>
     </div>
