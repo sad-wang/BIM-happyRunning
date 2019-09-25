@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>SunshinePE</title>
+    <link rel="stylesheet" href="./css/scoreDiary.css">
+    <link rel="stylesheet" href="../util/layui-src/src/css/layui.css">
+
+</head>
+<body class="layui-layout-body"  >
+<div id="app">
+    <div class="layui-layout layui-layout-admin" >
+        <div class="layui-header">
+            <img class="layui-logo logo" src="static/logo.png" style="width: 318px;
+            height: 50px;">
+            <div class="layui-layout-left logo-name">课外阳光锻炼系统</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item child-style"><a href="">退出</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <div class="avatar">
+                    <img src="http://www.doocr.com/modules/core/client/img/header/avatar-icon.svg" class="avatar-img" alt="">
+                    <span class="title-style">王sad</span>
+                </div>
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree "  lay-filter="test" v-for="item in sideLists" >
+                    <li class="layui-nav-item" v-bind:class="{ 'layui-nav-itemed' : item.status }" v-on:click ="item.status=!item.status">
+                        <a class="title-style" href="javascript:;">{{item.name}}</a>
+                        <dl class="layui-nav-child child-style" v-for="list in item.lists">
+                            <dd><a @click.stop="">{{list}}</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <!--                <router-link to="/foo">Go to Foo</router-link>-->
+            <!--                <router-link to="/bar">Go to Bar</router-link>-->
+        </div>
+
+        <div class="layui-body" style="bottom: 0px;">
+            <!-- 内容主体区域 -->
+            <div style="padding: 30px;">
+                <div class="main-content">
+                <span class="layui-badge-dot layui-bg-black" style="margin-bottom: 2px"></span>
+                <span class="title-content">日常得分标准设置:</span>
+            </div>
+                <form class="layui-form" > <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
+                    <div style="display: flex;flex-direction: row;align-items:flex-start; width: 500px;margin-left: 30px">
+                        <div style="flex: 1">
+                            <div>
+                                <div class="layui-form-item" >
+                                    <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                                    <div class="layui-input-inline" style="width: 45px">
+                                        <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                                    </div>
+                                    <div class="layui-form-mid ">分</div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label" style="text-align: left;font-size: 13px">积分及格线：</label>
+                                    <div class="layui-input-inline" style="width: 45px">
+                                        <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                                    </div>
+                                    <div class="layui-form-mid ">分</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="flex: 1">
+                            <div >
+                                <div class="layui-form-item" style="margin-left: 60px">
+                                    <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                                    <div class="layui-input-inline" style="width: 45px">
+                                        <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                                    </div>
+                                    <div class="layui-form-mid ">分</div>
+                                </div>
+                                <div class="layui-form-item" style="margin-left: 60px">
+                                    <label class="layui-form-label" style="text-align: left;font-size: 13px">学分及格线：</label>
+                                    <div class="layui-input-inline" style="width: 45px">
+                                        <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                                    </div>
+                                    <div class="layui-form-mid ">分</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item" style="margin: 10px 0 30px 0">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                    <!-- 更多表单结构排版请移步文档左侧【页面元素-表单】一项阅览 -->
+                </form>
+                <div class="main-content" style="margin-bottom: 30px">
+                    <span class="layui-badge-dot layui-bg-black" style="margin-bottom: 2px"></span>
+                    <span class="title-content">日常得分规则设置:</span>
+                </div>
+                <div style="margin-left: 30px" >
+                    <table class="layui-table" lay-data="{width: 892, height:330, url:'http://rap2api.taobao.org/app/mock/232172/score/diary/rules', page:true, id:'idTest'}" lay-filter="demo">
+                        <thead>
+                        <tr>
+                            <th lay-data="{type:'checkbox', fixed: 'left', width:70}"></th>
+                            <th lay-data="{field:'id', width:200, sort: true, fixed: true}">步数</th>
+                            <th lay-data="{field:'username', width:200}">积分</th>
+                            <th lay-data="{field:'sex', width:200, sort: true}">学分</th>
+                            <th lay-data="{fixed: 'right', width:200, align:'center', toolbar: '#barDemo'}"></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+        <script src="../util/layui-src/src/layui.js"></script>
+        <script src="../util/vue.js"></script>
+        <script src="../util/vue-router.js"></script>
+        <script src="./js/scoreDiary.js"></script>
+
+</body>
+</html>
+
