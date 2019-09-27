@@ -35,11 +35,11 @@
                     </ul>
                 </div>
             </aside>
-            <main class="layui-body" style="bottom: 0px;background-color: #F2F2F2;padding: 15px 0 30px 30px;">
+            <main class="layui-body" style="bottom: 0px;background-color: #F2F2F2;padding: 5px 15px 30px 15px;">
                 <fieldset class="layui-elem-field layui-field-title" >
                     <legend>日常得分</legend>
                 </fieldset>
-                <div class="layui-card"style="margin-left: 25px;width:730px ">
+                <div class="layui-card"style="margin-left: 25px; ">
                     <div class="layui-card-header">日常得分标准设置</div>
                     <div class="layui-card-body" >
                         <form class="layui-form" >
@@ -90,17 +90,17 @@
                         </form>
                     </div>
                 </div>
-                <div class="layui-card"style="margin-left: 25px;width: 950px;">
+                <div class="layui-card"style="margin-left: 25px;">
                     <div class="layui-card-header">日常得分规则设置</div>
                     <div class="layui-card-body" style="margin-left: 13px">
-                        <table class="layui-table" lay-data="{toolbar: 'default',width: 892, height: 'full-200', url:'http://rap2api.taobao.org/app/mock/232172/score/diary/rules', page:true, id:'idTest'}" lay-filter="demo">
+                        <table class="layui-table" lay-data="{toolbar: 'default', height: 'full-200', url:'http://rap2api.taobao.org/app/mock/232172/score/diary/rules', page:true, id:'idTest'}" lay-filter="demo">
                             <thead>
                             <tr>
                                 <th lay-data="{type:'checkbox', fixed: 'left', width:70}"></th>
-                                <th lay-data="{field:'id', width:200, sort: true, fixed: true}">步数</th>
-                                <th lay-data="{field:'username', width:200}">积分</th>
-                                <th lay-data="{field:'sex', width:200, sort: true}">学分</th>
-                                <th lay-data="{fixed: 'right', width:200, align:'center', toolbar: '#barDemo'}">操作</th>
+                                <th lay-data="{field:'id', sort: true, fixed: true}">步数</th>
+                                <th lay-data="{field:'username', }">积分</th>
+                                <th lay-data="{field:'sex', sort: true}">学分</th>
+                                <th lay-data="{fixed: 'right', align:'center', toolbar: '#barDemo'}">操作</th>
                             </tr>
                             </thead>
                         </table>
