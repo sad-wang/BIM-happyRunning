@@ -35,14 +35,16 @@
                 </ul>
             </div>
         </aside>
-        <main class="layui-body" style="bottom: 0px;background-color: #F2F2F2;padding: 5px 15px 30px 15px;">
-            <fieldset class="layui-elem-field layui-field-title" >
-                <legend>段位管理</legend>
-            </fieldset>
-            <div class="layui-card"style="margin-left: 25px;">
-                <div class="layui-card-header">段位管理规则设置</div>
+        <main class="layui-body" style="bottom: 0px;background-color: #F2F2F2;padding: 0px 15px 30px 15px;">
+            <ul class="layui-nav" style="position: absolute;width: 100%;background-color: #fff;">
+                <fieldset class="layui-elem-field layui-field-title" >
+                    <legend style="color:#666666;">系统管理 / 用户管理</legend>
+                </fieldset>
+            </ul>
+
+            <div class="layui-card"style="margin-left: 25px;margin-top: 72px">
                 <div class="layui-card-body" style="margin-left: 13px">
-                    <table class="layui-table" lay-data="{toolbar: 'default', height: 'full-240', url:'http://rap2api.taobao.org/app/mock/232172/score/diary/rules', page:true, id:'idTest'}" lay-filter="demo">
+                    <table class="layui-table" lay-data="{toolbar: 'default', height: 'full-200', url:'http://rap2api.taobao.org/app/mock/232172/score/diary/rules', page:true, id:'idTest'}" lay-filter="demo">
                         <thead>
                         <tr>
                             <th lay-data="{type:'checkbox', fixed: 'left', width:70}"></th>
