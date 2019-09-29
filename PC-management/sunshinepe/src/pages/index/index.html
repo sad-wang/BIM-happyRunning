@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>SunshinePE</title>
+  <style>
+    body{
+      font-family: "Helvetica Neue", Helvetica, "PingFang SC", Tahoma, Arial, sans-serif;
+    }
+    .logo-name{
+      line-height: 50px;
+      letter-spacing: 1px;
+      font-size: 18px;
+      color: white;
+      margin-left: 2px;
+      letter-spacing: 2px;
+    }
+    .avatar{
+      width: 220px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .avatar-img{
+      width: 64px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+
+  </style>
+</head>
+<body class="layui-layout-body"  >
+<div id="app">
+  <div class="layui-layout layui-layout-admin" >
+    <header class="layui-header">
+
+      <img class="layui-logo logo" src="https://user-gold-cdn.xitu.io/2019/9/29/16d7bfc7f6a6cb4b?w=627&h=100&f=png&s=53959/logo.png" style="width: 318px;
+                height: 50px;">
+      <div class="layui-layout-left logo-name">课外阳光锻炼系统</div>
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item child-style"><a href="">退出</a></li>
+      </ul>
+    </header>
+    <aside class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <div class="avatar" style="background-color: #282B33;">
+          <img src="www.doocr.com/modules/core/client/img/header/avatar-icon.svg" class="avatar-img" a>
+          <span class="title-style">王sad</span>
+        </div>
+        <ul class="layui-nav layui-nav-tree "  lay-filter="test" v-for="item in sideLists" >
+          <li class="layui-nav-item" v-bind:class="{ 'layui-nav-itemed' : item.status }" v-on:click ="item.status=!item.status">
+            <a  href="javascript:;" style="padding: 6px 0 6px 35px">{{item.name}}</a>
+            <dl class="layui-nav-child " v-for="list in item.lists">
+              <dd><a @click.stop="" style="padding:5px 0 5px 45px">{{list}}</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main class="layui-body" style="bottom: 0px;background-color: #F2F2F2;padding: 5px 15px 30px 15px;">
+      <ul class="layui-nav" style="position: absolute;width: 100%;background-color: #fff;">
+        <fieldset class="layui-elem-field layui-field-title" >
+          <legend style="color:#666666;">得分管理 / 日常得分</legend>
+        </fieldset>
+      </ul>
+      <div class="layui-card" style="margin-left: 25px;margin-top: 72px" >
+        <div class="layui-card-header">日常得分标准设置</div>
+        <div class="layui-card-body" >
+          <form class="layui-form" >
+            <div style="display: flex;flex-direction: row;align-items:flex-start; width: 500px;margin-left: 30px">
+              <div style="flex: 1">
+                <div>
+                  <div class="layui-form-item" >
+                    <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                    <div class="layui-input-inline" style="width: 45px">
+                      <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                    </div>
+                    <div class="layui-form-mid ">分</div>
+                  </div>
+                  <div class="layui-form-item">
+                    <label class="layui-form-label" style="text-align: left;font-size: 13px">积分及格线：</label>
+                    <div class="layui-input-inline" style="width: 45px">
+                      <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                    </div>
+                    <div class="layui-form-mid ">分</div>
+                  </div>
+                </div>
+              </div>
+              <div style="flex: 1">
+                <div >
+                  <div class="layui-form-item" style="margin-left: 60px">
+                    <label class="layui-form-label" style="text-align: left;font-size: 13px">积分上限：</label>
+                    <div class="layui-input-inline" style="width: 45px">
+                      <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                    </div>
+                    <div class="layui-form-mid ">分</div>
+                  </div>
+                  <div class="layui-form-item" style="margin-left: 60px">
+                    <label class="layui-form-label" style="text-align: left;font-size: 13px">学分及格线：</label>
+                    <div class="layui-input-inline" style="width: 45px">
+                      <input type="text" name="" placeholder="" autocomplete="off" class="layui-input input-point" style="display: block">
+                    </div>
+                    <div class="layui-form-mid ">分</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layui-form-item" style="margin: 20px 0 20px 125px">
+              <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="layui-card" style="margin-left: 25px;">
+        <div class="layui-card-header">日常得分规则设置</div>
+        <div class="layui-card-body" style="margin-left: 13px">
+          <table class="layui-table" lay-data="{toolbar: 'default', height: 'full-200', url:'http://rap2api.taobao.org/app/mock/232172/score/diary/rules', page:true, id:'idTest'}" lay-filter="demo">
+            <thead>
+            <tr>
+              <th lay-data="{type:'checkbox', fixed: 'left', width:70}"></th>
+              <th lay-data="{field:'id', sort: true, }">步数</th>
+              <th lay-data="{field:'username', }">积分</th>
+              <th lay-data="{field:'sex', sort: true}">学分</th>
+              <th lay-data="{fixed: 'right', align:'center', toolbar: '#barDemo'}">操作</th>
+            </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+  <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script src="./layui-src/src/layui.js"></script>
+</body>
+</html>
+
