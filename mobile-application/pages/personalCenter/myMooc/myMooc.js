@@ -39,7 +39,6 @@ Page({
     let productIndex = e.currentTarget.dataset.productindex
     this.setXmove(productIndex, -2000)
   },
-
   /**
    * 隐藏删除按钮
    */
@@ -47,7 +46,6 @@ Page({
     let productIndex = e.currentTarget.dataset.productindex
     this.setXmove(productIndex, 0)
   },
-
   /**
    * 设置movable-view位移
    */

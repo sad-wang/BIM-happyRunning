@@ -17,6 +17,5 @@ Page({
     this.setData({
       searchBoxState:false
     })
-
   }
 })

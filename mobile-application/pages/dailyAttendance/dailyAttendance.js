@@ -1,14 +1,5 @@
-
+// pages/dailyAttendance/dailyAttendance.js
 let a = 1
-wx.getLocation({
-  type: 'wgs84',
-  success(res) {
-    console.log(res.latitude)
-    console.log(res.longitude)
-    console.log(res.speed)
-    console.log(res.accuracy)
-  }
-})
 wx.startLocationUpdateBackground({
   success(res) {
     console.log("success")
