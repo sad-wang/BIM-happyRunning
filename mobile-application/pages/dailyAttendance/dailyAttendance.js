@@ -1,25 +1,25 @@
 // pages/dailyAttendance/dailyAttendance.js
 let a = 1
-wx.startLocationUpdateBackground({
-  success(res) {
-    console.log("success")
-    setInterval(
-      res => {
-        wx.getLocation({
-          type: 'wgs84',
-          success(res) {
-            console.log("第" + a + "次")
-            console.log("纬度:" + res.latitude + "经度" + res.longitude)
-          },
-          complete(res) {
-            console.log(res)
-          }
-        })
-        ++a
-      }
-      , 1000)
-  }
-})
+// wx.startLocationUpdateBackground({
+//   success(res) {
+//     console.log("success")
+//     setInterval(
+//       res => {
+//         wx.getLocation({
+//           type: 'wgs84',
+//           success(res) {
+//             console.log("第" + a + "次")
+//             console.log("纬度:" + res.latitude + "经度" + res.longitude)
+//           },
+//           complete(res) {
+//             console.log(res)
+//           }
+//         })
+//         ++a
+//       }
+//       , 1000)
+//   }
+// })
 let rpx, speed, scheduleFor,
     ctx, lineargradient;
 speed = 1;
